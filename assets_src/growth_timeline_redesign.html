@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>成长页 · 学习历程重设计</title>
+<style>
+/* ============ token（= docs/Experientia_设计家族.md §3-§6，同 experience_redesign_before_after.html） ============ */
+:root{
+  --brand-500:#F99E51; --brand-600:#E6631D; --brand-700:#B84A12; --brand-800:#8F380E;
+  --brand-100:#FCD6A6; --brand-50:#FDEED3;
+  --ink-900:#2A1A12; --ink-700:#4A3527; --ink-500:#7A6552; --ink-300:#B4A494;
+  --line:#EADFD2; --surface:#FDFBF7; --surface-2:#F7F1E8;
+  --ok-bg:#E8F3E4; --ok-fg:#35702F;
+  --warn-bg:#FCEFC9; --warn-fg:#8A5E00;
+  --err-bg:#FBE4DC; --err-fg:#B3261E;
+  --info-bg:#E9EEF6; --info-fg:#3A5A8C;
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 "Microsoft YaHei","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;color:var(--ink-900);background:#EFE7DB;padding:32px}
+.wrap{max-width:1120px;margin:0 auto}
+.doc-head{margin-bottom:20px}
+.doc-head h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
+.doc-head p{color:var(--ink-500);margin-top:6px;font-size:13px}
+.doc-head code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:12px;color:var(--brand-700)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden}
+.col-tag{padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.5px}
+.col.before .col-tag{background:var(--surface-2);color:var(--ink-500)}
+.col.after .col-tag{background:var(--brand-700);color:#fff}
+.stage{padding:18px}
+/* 卡片（= qt_theme.card：米底 + 1px 暖描边 + 圆角 16） */
+.card{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:16px}
+.card-h{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
+.card-h h3{font-size:16px;font-weight:600;color:var(--ink-700)}
+.card-h .meta{margin-left:auto;font-size:12px;color:var(--ink-500)}
+/* ============ BEFORE：还原截图现状 ============ */
+.brow{display:flex;align-items:flex-start;gap:8px;padding:5px 0}
+.brow .d{font-size:12px;color:var(--ink-500);width:74px;flex:none;font-variant-numeric:tabular-nums;padding-top:1px}
+.brow .dot{width:10px;height:10px;border-radius:5px;background:var(--brand-500);flex:none;margin-top:5px}
+.brow .tx{flex:1;font-size:14px;color:var(--ink-900);line-height:1.5}
+.brow .acts{display:flex;gap:8px;flex:none}
+.bbtn{height:28px;padding:0 12px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);color:var(--ink-900);font-size:13px}
+.bmore{display:block;margin:10px auto 0;color:var(--brand-600);font-size:13px;font-weight:600}
+/* ============ AFTER：按天分组 + 人话化 + 类型标签 ============ */
+.day{display:flex;align-items:center;gap:8px;padding:10px 4px 8px;border-bottom:1px solid var(--line);margin-bottom:2px}
+.day .dt{font-size:14px;font-weight:700;color:var(--ink-700);font-variant-numeric:tabular-nums}
+.day .cnt{margin-left:auto;font-size:12px;color:var(--ink-500)}
+.chip{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:var(--r-sm);font-size:12px;font-weight:600;white-space:nowrap}
+.chip.today{background:var(--brand-100);color:var(--ink-700)}
+.chip.auto{background:var(--surface-2);color:var(--ink-500);font-weight:500}
+.chip.learn{background:var(--brand-50);color:var(--brand-700)}
+.chip.method{background:var(--ok-bg);color:var(--ok-fg)}
+.chip.pref{background:var(--info-bg);color:var(--info-fg)}
+.chip.ach{background:var(--warn-bg);color:var(--warn-fg)}
+.chip.n{background:var(--surface-2);color:var(--ink-700);font-variant-numeric:tabular-nums}
+.node{position:relative;display:flex;gap:10px;padding:9px 4px;border-radius:var(--r-md)}
+.node:hover{background:var(--surface-2)}
+.rail{width:14px;flex:none;position:relative}
+.rail::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1px;background:var(--line)}
+.node:last-of-type .rail::before{bottom:auto;height:12px}
+.rail .pt{position:absolute;left:3px;top:6px;width:7px;height:7px;border-radius:50%}
+.pt.learn{background:var(--brand-500)}
+.pt.method{background:var(--ok-fg)}
+.pt.pref{background:var(--info-fg)}
+.pt.ach{background:var(--warn-fg)}
+.pt.other{background:var(--ink-300)}
+.nbody{flex:1;min-width:0}
+.l1{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.l1 .t{font-size:14px;font-weight:600;color:var(--ink-900);line-height:1.45}
+.l2{font-size:12px;color:var(--ink-500);margin-top:1px;font-variant-numeric:tabular-nums}
+.more{width:24px;height:24px;flex:none;border:none;border-radius:var(--r-sm);background:transparent;color:var(--ink-500);font-size:16px;line-height:1;cursor:pointer;opacity:0;transition:opacity .12s ease}
+.node:hover .more,.node:focus-within .more{opacity:1}
+.more:hover{background:var(--brand-50);color:var(--brand-700)}
+/* 折叠日行 */
+.dayfold{display:flex;align-items:center;gap:8px;padding:8px 4px;border-radius:var(--r-md);cursor:pointer;font-size:14px;font-weight:600;color:var(--ink-700)}
+.dayfold:hover{background:var(--surface-2)}
+.dayfold .ar{color:var(--ink-500);font-size:12px}
+.dayfold .cnt{margin-left:auto;font-size:12px;color:var(--ink-500);font-weight:400}
+/* ⋯ 菜单（静态演示） */
+.menu{position:relative;display:inline-block}
+.menu .panel{position:absolute;right:0;top:26px;z-index:5;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:0 1px 2px rgba(42,26,18,.06);padding:4px;white-space:nowrap}
+.menu .panel span{display:block;padding:6px 14px;font-size:13px;border-radius:var(--r-sm);color:var(--ink-700)}
+.menu .panel span.danger{color:var(--err-fg)}
+.menu .panel span:hover{background:var(--surface-2)}
+.foot{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.foot .flat{color:var(--brand-700);font-size:13px;font-weight:600;cursor:pointer}
+/* 合并组展开演示（小窗） */
+.inset{margin-top:14px;border:1px dashed var(--line);border-radius:var(--r-lg);padding:12px}
+.inset .cap{font-size:12px;font-weight:700;color:var(--ink-500);margin-bottom:8px}
+/* 改动说明 / 策略区 */
+.notes,.strategy{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:20px 24px}
+.notes h3,.strategy h3{font-size:16px;font-weight:700;margin-bottom:12px}
+.notes ol{padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--ink-700)}
+.notes li b{color:var(--ink-900)}
+.notes code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:12px;color:var(--brand-700)}
+/* 信息量控制策略 */
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.layer{border:1px solid var(--line);border-radius:var(--r-lg);padding:12px 14px;background:var(--surface)}
+.layer .lv{font-size:12px;font-weight:700;color:var(--brand-700);letter-spacing:.5px}
+.layer h4{font-size:14px;font-weight:700;margin:2px 0 4px}
+.layer p{font-size:12px;color:var(--ink-500);line-height:1.55}
+.valves{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.valve{display:flex;gap:10px;font-size:13px;color:var(--ink-700)}
+.valve .no{width:22px;height:22px;flex:none;border-radius:50%;background:var(--brand-50);color:var(--brand-700);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.valve b{color:var(--ink-900)}
+.valve .tag{flex:none;font-size:11px;font-weight:600;padding:1px 8px;border-radius:var(--r-sm);height:fit-content;margin-top:2px}
+.tag.ui{background:var(--ok-bg);color:var(--ok-fg)}
+.tag.doc{background:var(--warn-bg);color:var(--warn-fg)}
+.tag.exist{background:var(--surface-2);color:var(--ink-500)}
+.strategy .tail{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-500)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="doc-head">
+    <h1>成长页 · 学习历程重设计</h1>
+    <p>同一份 changelog 数据、同一套 token（<code>docs/Experientia_设计家族.md</code>），只改摆法。左边还原截图现状：42 条原始日志铺墙；右边是「按天分组 + 人话化 + ×N 合并」的改法。下半部分回答：经验固化成方法之后，信息量怎么控制不爆炸。</p>
+  </div>
+
+  <div class="grid">
+    <!-- ============ BEFORE ============ -->
+    <div class="col before">
+      <div class="col-tag">现在 · 为什么丑</div>
+      <div class="stage">
+        <div class="card">
+          <div class="card-h"><h3>学习历程（每个节点可编辑/删除）</h3></div>
+
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验（文件通道）</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验 [auto]</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验（文件通道）</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验 [auto]</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验（文件通道）</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验 [auto]</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验（文件通道）</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <div class="brow"><span class="d">2026-03-04</span><span class="dot"></span><span class="tx">复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验 [auto]</span><span class="acts"><button class="bbtn">编辑</button><button class="bbtn">删除</button></span></div>
+          <span class="bmore">展开更多 42 条</span>
+        </div>
+        <div class="notes" style="margin-top:16px;padding:14px 18px">
+          <ol>
+            <li><b>原始日志当正文</b>：会话 ID、通道名、「候选经验」这类内部词直接糊脸（违反 §9 平实名）。</li>
+            <li><b>42 条同构行铺墙</b>：8 行里 6 行内容几乎一样，没有分组、没有聚合，信息密度≈0。</li>
+            <li><b>每行两个实线按钮</b>：编辑/删除常驻 42 份，噪音比内容大；「每个节点可编辑/删除」这句操作说明还写进了标题。</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ AFTER ============ -->
+    <div class="col after">
+      <div class="col-tag">改后 · 按天分组 + 人话 + ×N 合并</div>
+      <div class="stage">
+        <div class="card">
+          <div class="card-h">
+            <h3>学习历程</h3>
+            <span class="meta">共 50 个节点 · 删除=归档，30 天可恢复</span>
+          </div>
+
+          <!-- 最新一天：展开 -->
+          <div class="day">
+            <span class="dt">2026-03-04</span><span class="chip today">今天</span>
+            <span class="cnt">8 个节点</span>
+          </div>
+
+          <div class="node">
+            <div class="rail"><span class="pt learn"></span></div>
+            <div class="nbody">
+              <div class="l1">
+                <span class="chip learn">新经验</span><span class="chip n">×5</span><span class="chip auto">[auto]</span>
+                <span class="t">从 5 次会话共学到 5 条新经验</span>
+              </div>
+              <div class="l2">其他/未分类 · 文件通道 · 14:22</div>
+            </div>
+            <button class="more">⋯</button>
+          </div>
+
+          <div class="node">
+            <div class="rail"><span class="pt pref"></span></div>
+            <div class="nbody">
+              <div class="l1">
+                <span class="chip pref">偏好归纳</span><span class="chip auto">[auto]</span>
+                <span class="t">偏好画像「其他」自动归纳 2 条新偏好</span>
+              </div>
+              <div class="l2">其他 · 15:03</div>
+            </div>
+            <button class="more">⋯</button>
+          </div>
+
+          <div class="node">
+            <div class="rail"><span class="pt method"></span></div>
+            <div class="nbody">
+              <div class="l1">
+                <span class="chip method">方法升级</span><span class="chip auto">[auto]</span>
+                <span class="t">方法「其他/未分类」升级到 v3</span>
+              </div>
+              <div class="l2">由 5 条经验蒸馏 · 会话复盘 · 淘汰 1 条 · 16:40</div>
+            </div>
+            <button class="more">⋯</button>
+          </div>
+
+          <div class="node">
+            <div class="rail"><span class="pt ach"></span></div>
+            <div class="nbody">
+              <div class="l1">
+                <span class="chip ach">成就</span><span class="chip auto">[auto]</span>
+                <span class="t">解锁 1 个成就：老练（文案写作）</span>
+              </div>
+              <div class="l2">17:00</div>
+            </div>
+            <button class="more">⋯</button>
+          </div>
+
+          <!-- 更早的日子：折叠成一行 -->
+          <div class="dayfold"><span class="ar">▸</span><span class="dt" style="font-size:13px;font-weight:600">2026-09-09</span><span class="cnt">12 个节点</span></div>
+          <div class="dayfold"><span class="ar">▸</span><span class="dt" style="font-size:13px;font-weight:600">2026-09-05</span><span class="cnt">3 个节点</span></div>
+
+          <div class="foot"><span class="flat">展开全部 50 个节点</span></div>
+        </div>
+
+        <!-- ⋯ 菜单演示 -->
+        <div class="inset">
+          <div class="cap">⋯ 菜单（hover 行时出现，替代每行常驻的两个按钮）</div>
+          <div class="node">
+            <div class="rail"><span class="pt learn"></span></div>
+            <div class="nbody">
+              <div class="l1"><span class="chip learn">新经验</span><span class="chip auto">[auto]</span><span class="t">从 workbuddy 的一次会话学到 1 条新经验</span></div>
+              <div class="l2">其他/未分类 · 文件通道 · 14:22</div>
+            </div>
+            <span class="menu"><button class="more" style="opacity:1">⋯</button>
+              <span class="panel"><span>编辑</span><span class="danger">删除（归档 30 天可恢复）</span></span>
+            </span>
+          </div>
+        </div>
+
+        <!-- ×N 合并组展开演示 -->
+        <div class="inset">
+          <div class="cap">「×5」合并组点开后：逐条还原，每条仍带自己的 ⋯（数据零改动，纯展示层合并）</div>
+          <div class="node">
+            <div class="rail"><span class="pt learn"></span></div>
+            <div class="nbody">
+              <div class="l1"><span class="chip learn">新经验</span><span class="chip auto">[auto]</span><span class="t">从 workbuddy 的一次会话学到 1 条新经验</span></div>
+              <div class="l2">其他/未分类 · 文件通道 · 14:22</div>
+            </div>
+            <button class="more" style="opacity:1">⋯</button>
+          </div>
+          <div class="node">
+            <div class="rail"><span class="pt learn"></span></div>
+            <div class="nbody">
+              <div class="l1"><span class="chip learn">新经验</span><span class="chip auto">[auto]</span><span class="t">从 workbuddy 的一次会话学到 1 条新经验</span></div>
+              <div class="l2">其他/未分类 · 文件通道 · 11:47</div>
+            </div>
+            <button class="more" style="opacity:1">⋯</button>
+          </div>
+          <div class="node">
+            <div class="rail"><span class="pt learn"></span></div>
+            <div class="nbody">
+              <div class="l1"><span class="chip learn">新经验</span><span class="chip auto">[auto]</span><span class="t">从 workbuddy 的一次会话学到 1 条新经验</span></div>
+              <div class="l2">其他/未分类 · 文件通道 · 10:15</div>
+            </div>
+            <button class="more" style="opacity:1">⋯</button>
+          </div>
+          <div class="foot" style="margin-top:6px"><span class="flat">收起</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 改动说明 ============ -->
+  <div class="notes">
+    <h3>改了什么（按收益排序）</h3>
+    <ol>
+      <li><b>按天分组 + 旧日折叠</b>：默认只展开最近一天，更早的日子收成「日期 · N 个节点」一行，点开展开。50 个节点从「42 行墙」变成「4 行 + 2 个折叠条」。</li>
+      <li><b>×N 合并展示</b>：同一天里连续出现的同型节点自动合成一条「×5」（纯展示层合并，changelog 数据、编辑/删除索引零改动），点开后逐条还原、逐条可编辑。</li>
+      <li><b>人话化</b>：<code>复盘 workbuddy 会话 00000000-000… → 其他/未分类 新增 1 条候选经验（文件通道）</code> → 「从 workbuddy 的一次会话学到 1 条新经验」，会话 ID/通道降级到灰色副行。解析是 best-effort：用户改过的节点不匹配模板就原样显示，零风险。</li>
+      <li><b>类型标签 + 同色圆点</b>：新经验（橙）/ 方法升级（绿）/ 偏好归纳（蓝）/ 成就（金）四类标签 + 时间轴圆点同色，一眼看出「今天学了什么」。<code>[auto]</code> 标保留（§11 既有约定，用户要能认出"哪些是我没点过的"）。</li>
+      <li><b>操作降噪</b>：每行常驻的「编辑/删除」两个实线按钮 → 右侧一个 ⋯ 菜单（hover 出现）；「每个节点可编辑/删除」这句操作说明从标题挪到卡头右上角的灰色说明。</li>
+      <li><b>删除语义不变</b>：删除=归档（deprecated/ 保留 30 天可恢复），菜单里把后果写明白「删除（归档 30 天可恢复）」。</li>
+    </ol>
+  </div>
+
+  <!-- ============ 信息量控制策略 ============ -->
+  <div class="strategy">
+    <h3>固化成方法之后，信息量怎么控制不爆炸</h3>
+
+    <div class="layers">
+      <div class="layer">
+        <div class="lv">L1 · 默认</div>
+        <h4>家底</h4>
+        <p>KPI 卡 + 方法沉淀概览。回答「我现在有什么」：几个方法、几类熟练、几个坑。用户每天只看这一层。</p>
+      </div>
+      <div class="layer">
+        <div class="lv">L2 · 按需</div>
+        <h4>过程</h4>
+        <p>学习历程。回答「怎么来的」：按天分组 + ×N 合并 + 旧日折叠。默认只露最近一天，往历史里走要主动点。</p>
+      </div>
+      <div class="layer">
+        <div class="lv">L3 · 审计</div>
+        <h4>原料</h4>
+        <p>完整 changelog + deprecated/ 归档 + 经验流原文。只有「展开全部」和归档入口能看到，平时不占任何版面。</p>
+      </div>
+    </div>
+
+    <div class="valves">
+      <div class="valve"><span class="no">1</span><div><b>记录粒度从「条」改成「事件」。</b>一次复盘产出 3 条候选经验，现在落 3 个节点——42 条墙里绝大部分是这么来的。改成按事件落：一次复盘 1 个节点（「从 N 次会话学到 M 条新经验」），一次方法升级 1 个节点。节点数从 O(经验条数) 降到 O(学习事件数)。</div><span class="tag doc">数据层 · 需维护者拍板</span></div>
+      <div class="valve"><span class="no">2</span><div><b>固化后降级。</b>候选经验一旦确认写进方法，它的单独节点就变成「原料」——默认折叠在对应「方法升级」里程碑节点下，点里程碑才下钻出原始节点。用户在 L2 看到的永远是里程碑，不是碎条。</div><span class="tag doc">数据层 · 需维护者拍板</span></div>
+      <div class="valve"><span class="no">3</span><div><b>展示层聚合（本次已做）。</b>×N 合并、旧日折叠成一行、会话 ID 降级到副行、默认视图只展开最近一天。即使数据层粒度不改，墙也立不起来。</div><span class="tag ui">展示层 · 本次实现</span></div>
+      <div class="valve"><span class="no">4</span><div><b>衰减与出口（已有）。</b>档 C 老化钟（30 天降权 / 90 天归档 / deprecated 30 天清理）管数据侧，UI 侧同节奏：默认视图只展示最近 14 天，更早的进 L3。</div><span class="tag exist">已有机制</span></div>
+    </div>
+
+    <div class="tail">注入侧（模型看到的）不受影响：800 token 总预算 + playbook 200 行压缩 + 近义合并（§17.3 / §18.2）已经是闭环，方法再多也不会把上下文撑爆。要控制的是「人看到的」，不是「模型看到的」——两层预算各管各的。</div>
+  </div>
+</div>
+</body>
+</html>
