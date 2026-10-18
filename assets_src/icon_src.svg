@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Exp+/Experientia 吉祥物：比耶小宇航员（简笔 + 蜡笔笔触）。
+       设计源文件（手绘矢量）。__OUTLINE__ / __BG__ 由 scripts/make_icons.py 替换生成：
+         icon.png（浅底圆 + 深勾线）/ splash.png（透明底 + 深勾线）/ splash_dark.png（透明底 + 浅勾线）。
+       注意：flet build 只认光栅图（flet_cli find_platform_image 明确忽略 SVG），
+       本文件仅作设计源，交付物一律经 resvg 光栅化。 -->
+  <defs>
+    <filter id="crayon" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#crayon)">
+    __BG__
+    <g transform="translate(-20,-40)">
+      <!-- 星星点缀 -->
+      <path d="M240,212 Q254.7,254.7 296,268 Q254.7,281.3 240,324 Q225.3,281.3 184,268 Q225.3,254.7 240,212 Z"
+            fill="#7C8CF8" stroke="__OUTLINE__" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M800,244 Q811.4,270.6 838,282 Q811.4,293.4 800,320 Q788.6,293.4 762,282 Q788.6,270.6 800,244 Z"
+            fill="#F5B841" stroke="__OUTLINE__" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M806,716 Q815.8,738.2 838,748 Q815.8,757.8 806,780 Q796.2,757.8 774,748 Q796.2,738.2 806,716 Z"
+            fill="#7C8CF8" stroke="__OUTLINE__" stroke-width="8" stroke-linejoin="round"/>
+      <circle cx="238" cy="764" r="13" fill="#F5B841" stroke="__OUTLINE__" stroke-width="7"/>
+      <!-- 靴子（画在身体下层） -->
+      <rect x="404" y="812" width="104" height="76" rx="30" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="14"/>
+      <rect x="516" y="812" width="104" height="76" rx="30" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="14"/>
+      <!-- 左臂（垂手，画在身体下层） -->
+      <line x1="452" y1="668" x2="368" y2="772" stroke="__OUTLINE__" stroke-width="62" stroke-linecap="round"/>
+      <line x1="452" y1="668" x2="368" y2="772" stroke="#FFFFFF" stroke-width="38" stroke-linecap="round"/>
+      <circle cx="352" cy="788" r="42" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="14"/>
+      <!-- 右臂（举手臂在身体下层，只露体外段） -->
+      <line x1="596" y1="668" x2="716" y2="596" stroke="__OUTLINE__" stroke-width="62" stroke-linecap="round"/>
+      <line x1="596" y1="668" x2="716" y2="596" stroke="#FFFFFF" stroke-width="38" stroke-linecap="round"/>
+      <!-- 身体 -->
+      <rect x="392" y="592" width="240" height="248" rx="92" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="16"/>
+      <rect x="392" y="592" width="240" height="248" rx="92" fill="none" stroke="__OUTLINE__"
+            stroke-width="18" stroke-dasharray="3 20" stroke-linecap="round" opacity="0.22"/>
+      <!-- 胸前面板 -->
+      <rect x="466" y="682" width="92" height="68" rx="18" fill="#EFF3FF" stroke="__OUTLINE__" stroke-width="10"/>
+      <circle cx="496" cy="710" r="10" fill="#4F46E5" stroke="__OUTLINE__" stroke-width="5"/>
+      <circle cx="528" cy="710" r="10" fill="#F5A623" stroke="__OUTLINE__" stroke-width="5"/>
+      <!-- 头盔 -->
+      <circle cx="512" cy="432" r="206" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="18"/>
+      <circle cx="512" cy="432" r="206" fill="none" stroke="__OUTLINE__"
+              stroke-width="20" stroke-dasharray="3 20" stroke-linecap="round" opacity="0.25"/>
+      <!-- 左耳罩 -->
+      <circle cx="316" cy="478" r="30" fill="#D7E2FF" stroke="__OUTLINE__" stroke-width="12"/>
+      <!-- 面罩 -->
+      <ellipse cx="512" cy="448" rx="148" ry="116" fill="#C9DEFF" stroke="__OUTLINE__" stroke-width="14"/>
+      <!-- 脸 -->
+      <circle cx="432" cy="500" r="12" fill="#F8B7C3"/>
+      <circle cx="592" cy="500" r="12" fill="#F8B7C3"/>
+      <circle cx="462" cy="462" r="15" fill="#2E3B58"/>
+      <circle cx="562" cy="462" r="15" fill="#2E3B58"/>
+      <circle cx="467" cy="456" r="5" fill="#FFFFFF"/>
+      <circle cx="567" cy="456" r="5" fill="#FFFFFF"/>
+      <path d="M484,506 Q512,532 540,506" fill="none" stroke="#2E3B58" stroke-width="10" stroke-linecap="round"/>
+      <!-- 面罩高光 -->
+      <line x1="416" y1="388" x2="460" y2="366" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+      <line x1="402" y1="422" x2="426" y2="410" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+      <!-- 比耶手（画在头盔上层：手掌贴头盔边缘前方） -->
+      <line x1="722" y1="560" x2="694" y2="472" stroke="__OUTLINE__" stroke-width="38" stroke-linecap="round"/>
+      <line x1="722" y1="560" x2="694" y2="472" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+      <line x1="756" y1="556" x2="766" y2="464" stroke="__OUTLINE__" stroke-width="38" stroke-linecap="round"/>
+      <line x1="756" y1="556" x2="766" y2="464" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+      <circle cx="738" cy="584" r="44" fill="#FFFFFF" stroke="__OUTLINE__" stroke-width="14"/>
+    </g>
+  </g>
+</svg>

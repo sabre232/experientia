@@ -1,0 +1,39 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+uv.lock
+*.egg-info/
+.pytest_cache/
+# 测试临时根（pytest_configure 收拢到项目内，便于整目录手工清理）
+.pytest_tmp/
+dist/
+build/
+*.tmp
+# L-N6: 系统 / 编辑器临时文件
+.ruff_cache/
+.DS_Store
+*~
+*.swp
+# 运行 / 覆盖率残留（不入库）
+.coverage
+app_run.log
+app_run_err.log
+# pytest 临时目录 + 诊断输出
+_diag_tmp*/
+_diag_regress*.txt
+_diag_*.log
+# AI 协作工具本地数据（计划/会话，非仓库资产）
+.codebuddy/
+.zcode/
+.workbuddy/
+.trae-html-share-packages/
+# 视觉调试 / 渲染脚本临时产物（bisect 截图、render 脚本，非仓库资产）
+.cache/
+_preview_*.png
+_probe_*.png
+scripts/_tmp_*.py
+# 回收站暂存（删除前的可恢复区，非仓库资产）
+.trash/
+
+# 产品设计套件链式产物（AI 协作输出，非仓库资产）
+spark-output/

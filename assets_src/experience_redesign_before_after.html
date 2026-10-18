@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>经验库卡片 · 前后对比</title>
+<style>
+/* ============ token（= docs/Experientia_设计家族.md §3-§6，同 mockup.html） ============ */
+:root{
+  --brand-500:#F99E51; --brand-600:#E6631D; --brand-700:#B84A12; --brand-800:#8F380E;
+  --brand-100:#FCD6A6; --brand-50:#FDEED3;
+  --ink-900:#2A1A12; --ink-700:#4A3527; --ink-500:#7A6552;
+  --line:#EADFD2; --surface:#FDFBF7; --surface-2:#F7F1E8;
+  --ok-bg:#E8F3E4; --ok-fg:#35702F;
+  --warn-bg:#FCEFC9; --warn-fg:#8A5E00;
+  --err-bg:#FBE4DC; --err-fg:#B3261E;
+  --info-bg:#E9EEF6; --info-fg:#3A5A8C;
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 "Microsoft YaHei","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;color:var(--ink-900);background:#EFE7DB;padding:32px}
+.wrap{max-width:1120px;margin:0 auto}
+.doc-head{margin-bottom:20px}
+.doc-head h1{font-size:24px;font-weight:700;letter-spacing:-.3px}
+.doc-head p{color:var(--ink-500);margin-top:6px;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden}
+.col-tag{padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.5px}
+.col.before .col-tag{background:var(--surface-2);color:var(--ink-500)}
+.col.after .col-tag{background:var(--brand-700);color:#fff}
+.stage{padding:16px}
+/* 页头（经验库标题 + 筛选） */
+.pg{display:flex;align-items:center;gap:10px;padding:4px 4px 14px}
+.pg h2{font-size:20px;font-weight:700}
+.pg .sub{font-size:12px;color:var(--ink-500);align-self:flex-end;padding-bottom:2px}
+.pg .spacer{flex:1}
+.pill{height:32px;display:inline-flex;align-items:center;padding:0 12px;border-radius:var(--r-md);font-size:13px;border:1px solid var(--line);color:var(--ink-500);background:var(--surface)}
+.search{width:150px}
+.btn-primary{height:32px;display:inline-flex;align-items:center;gap:6px;padding:0 14px;border-radius:var(--r-md);font-size:13px;font-weight:600;background:var(--brand-700);color:#fff;border:1px solid var(--brand-700)}
+/* ============ BEFORE：还原截图的土法 ============ */
+.bcard{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:14px;display:flex;gap:12px;margin-bottom:12px}
+.bcard .l{flex:1;font-size:12px;color:var(--ink-900)}
+.bcard .l .t{font-size:14px;font-weight:600;color:var(--ink-900);line-height:1.5;margin-bottom:4px}
+.bcard .l .m{color:var(--ink-500);margin-bottom:6px}
+.bcard .l .f{margin-bottom:3px}
+.bcard .tags{display:flex;flex-direction:column;align-items:flex-end;gap:8px;justify-content:center}
+.bchip-warn{background:var(--warn-bg);color:var(--warn-fg);font-size:12px;font-weight:600;padding:2px 10px;border-radius:var(--r-sm)}
+.bbtn{color:var(--brand-600);font-size:13px;font-weight:600}
+/* ============ AFTER：走设计家族的克制 ============ */
+.acard{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:18px;margin-bottom:14px}
+.acard .top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.cat{font-size:12px;color:var(--ink-500);background:var(--surface-2);padding:1px 8px;border-radius:var(--r-sm)}
+.acard .date{margin-left:auto;font-size:12px;color:var(--ink-500);font-variant-numeric:tabular-nums}
+.acard .title{font-size:16px;font-weight:600;color:var(--ink-900);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}
+.acard .meta{font-size:12px;color:var(--ink-500);margin-bottom:14px}
+.fields{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:10px}
+.field{display:flex;gap:10px}
+.field .k{width:44px;flex:none;font-size:12px;color:var(--ink-500);padding-top:2px}
+.field .k::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.field.k-pit .k::before{background:var(--err-fg)}
+.field.k-fix .k::before{background:var(--brand-500)}
+.field.k-out .k::before{background:var(--ok-fg)}
+.field .v{flex:1;font-size:14px;color:var(--ink-700);line-height:1.6}
+.acard .foot{display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.chip{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border-radius:var(--r-sm);font-size:12px;font-weight:600}
+.chip.warn{background:var(--warn-bg);color:var(--warn-fg)}
+.chip.ok{background:var(--ok-bg);color:var(--ok-fg)}
+.chip.info{background:var(--info-bg);color:var(--info-fg)}
+.foot .spacer{flex:1}
+.ghost{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:var(--r-md);border:1px solid var(--line);background:transparent;color:var(--ink-700);font-size:13px;font-weight:500}
+.ghost svg{width:15px;height:15px}
+.ghost.ok .ic{color:var(--ok-fg)}
+.ghost.err .ic{color:var(--err-fg)}
+/* 改动说明 */
+.notes{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:20px 24px}
+.notes h3{font-size:16px;font-weight:700;margin-bottom:12px}
+.notes ol{padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--ink-700)}
+.notes li b{color:var(--ink-900)}
+.notes code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:12px;color:var(--brand-700)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="doc-head">
+    <h1>经验库卡片 · 前后对比</h1>
+    <p>同一份数据、同一套 token（<code>assets_src/mockup.html</code>），只改摆法。左边还原截图现状，右边是走设计家族「克制」的改法。</p>
+  </div>
+
+  <div class="grid">
+    <!-- ============ BEFORE ============ -->
+    <div class="col before">
+      <div class="col-tag">现在 · 为什么土</div>
+      <div class="stage">
+        <div class="pg">
+          <h2>经验库</h2><span class="sub">原始对话轨迹</span>
+          <span class="spacer"></span>
+          <span class="pill">全部</span><span class="pill">全部 agent</span>
+          <span class="pill search">搜索</span><span class="btn-primary">导出</span>
+        </div>
+
+        <div class="bcard">
+          <div class="l">
+            <div class="t">未分类 - 我需要你先理解这套日志排查方法，然后用结构化的方式梳理一下它的实现</div>
+            <div class="m">workbuddy · 示例模型 · 2026-03-04</div>
+            <div class="f">踩坑: 我刚刚想到了，这一步其实要分2步去看，之前说过的，先复现问题再定位根因。因为跳过复现直接</div>
+            <div class="f">日志部分: 是的，我认为其实应该先调高日志等级，关键分支没有输出的话根本定位不了根因，所以这一块</div>
+            <div class="f">做法: 图已生成，更新工作区日志，然后呈现全部交付物。</div>
+          </div>
+          <div class="tags">
+            <span class="bchip-warn">待总结</span>
+            <span class="bbtn">有效</span>
+            <span class="bbtn">纠正</span>
+          </div>
+        </div>
+
+        <div class="bcard">
+          <div class="l">
+            <div class="t">未分类 - 刚才那个临时目录怎么不见了，我找了一圈都没找到</div>
+            <div class="m">workbuddy · deepseek-v4-flash · 2026-03-04</div>
+            <div class="f">踩坑: 你跳过了现象本身，没有先去研究清楚为什么会在这个环节反复失败的原因</div>
+            <div class="f">现状定格: 仍按固定 30% 增量推进、不挂此信号；历史回溯并入后续批次。设计记录补了</div>
+            <div class="f">做法: Glob 返回空但 Read 能读到该文件——说明 Glob 对含中文的绝对路径匹配有偏差</div>
+          </div>
+          <div class="tags">
+            <span class="bchip-warn">待总结</span>
+            <span class="bbtn">有效</span>
+            <span class="bbtn">纠正</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ AFTER ============ -->
+    <div class="col after">
+      <div class="col-tag">改后 · 克制</div>
+      <div class="stage">
+        <div class="pg">
+          <h2>经验库</h2><span class="sub">原始对话轨迹</span>
+          <span class="spacer"></span>
+          <span class="pill">全部</span><span class="pill">全部 agent</span>
+          <span class="pill search">搜索</span><span class="btn-primary">导出</span>
+        </div>
+
+        <div class="acard">
+          <div class="top">
+            <span class="cat">未分类</span>
+            <span class="date">2026-03-04</span>
+          </div>
+          <div class="title">我需要你先理解这套日志排查方法，然后用结构化的方式梳理一下它的实现</div>
+          <div class="meta">workbuddy · 示例模型</div>
+          <div class="fields">
+            <div class="field k-pit"><span class="k">踩坑</span><span class="v">这一步其实要分两步看：先复现问题再定位根因，不能跳过复现直接动手改。</span></div>
+            <div class="field k-fix"><span class="k">做法</span><span class="v">图已生成，更新工作区日志，然后呈现全部交付物。</span></div>
+          </div>
+          <div class="foot">
+            <span class="chip warn">待总结</span>
+            <span class="spacer"></span>
+            <span class="ghost ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>有效</span>
+            <span class="ghost err"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg>纠正</span>
+          </div>
+        </div>
+
+        <div class="acard">
+          <div class="top">
+            <span class="cat">未分类</span>
+            <span class="date">2026-03-04</span>
+          </div>
+          <div class="title">刚那个临时目录怎么不见了，找了一圈都没找到</div>
+          <div class="meta">workbuddy · deepseek-v4-flash</div>
+          <div class="fields">
+            <div class="field k-pit"><span class="k">踩坑</span><span class="v">跳过了现象本身，没有先去研究清楚「为什么会在这个环节反复失败」这个现象本身。</span></div>
+            <div class="field k-fix"><span class="k">做法</span><span class="v">Glob 返回空但 Read 能读到该文件——Glob 对含中文的绝对路径匹配有偏差。</span></div>
+            <div class="field k-out"><span class="k">结果</span><span class="v">仍按固定 30% 增量推进、不挂此信号；历史回溯并入后续批次。</span></div>
+          </div>
+          <div class="foot">
+            <span class="chip info">已总结</span>
+            <span class="spacer"></span>
+            <span class="ghost ok"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>有效</span>
+            <span class="ghost err"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg>纠正</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <h3>改了哪几处（都走现有 token，不动数据）</h3>
+    <ol>
+      <li><b>标题降位</b>：category 收成右上小标签、日期挪到右上角；task 截断成 1–2 行（<code>line-clamp</code>，全文仍在数据里），字号提到 h2 当真正的标题。</li>
+      <li><b>内容破墙</b>：踩坑/做法/结果 改成「标签 + 值」定义结构，label 用色点锚住，值 14px、行距拉开——不再是 12px 灰字墙。</li>
+      <li><b>标签系统化</b>：状态（待总结/已总结）= chip；操作（有效/纠正）= ghost 按钮。有效/纠正 的语义色只落在小图标上，橙从卡片里清出去。</li>
+      <li><b>橙只留两处</b>：导出（唯一实心主按钮）+ 侧栏选中。卡片内零橙，符合设计家族「一屏一个主操作」。</li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>

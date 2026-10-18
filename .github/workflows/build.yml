@@ -1,0 +1,124 @@
+# 三平台构建：测试 → 矩阵构建（PyInstaller onedir，配置见 experientia.spec）
+# 产物上传为 GitHub Actions artifact；发布时把 artifact 挂到 GitHub Release 并
+# 打一个 semver tag（例如 v1.2.0）。应用内不做版本检查与自动更新，
+# 用户自行在仓库 Releases 页取新版本。
+#
+# 未签名发布（v1.0 口径）：产物不做代码签名——
+# macOS Gatekeeper：右键 → 打开一次；Windows SmartScreen：更多信息 → 仍要运行。
+name: build
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Install Qt system libraries (headless)
+        # PySide6 导入即需 libEGL/libGL 等系统库；headless 用 offscreen 平台无需显示器
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libgl1 libegl1 libglib2.0-0 libxkbcommon0 libdbus-1-3 libx11-6
+      - name: Install
+        # setup-uv@v5 不自动建 venv，uv pip install 需要 venv 在场；
+        # 改用 uv sync 自动建 .venv 并安装 extras，uv run 复用同一环境
+        run: uv sync --extra gui --extra dev
+      - name: Compile locales
+        run: uv run python scripts/compile_locales.py
+      - name: Tests
+        # TEST-4：覆盖率阈值护栏（app ≥60%，防重构回退；CI 只在 tag/dispatch 触发）
+        # -v 打印逐条进度；--timeout 让挂起的测试快速失败并报出测试名（headless 上曾整轮无输出）
+        run: uv run pytest tests/ -v --timeout=180 --cov=app --cov-report=term-missing --cov-fail-under=60
+
+  build:
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            target: windows
+          - os: macos-latest
+            target: macos
+          - os: ubuntu-latest
+            target: linux
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    env:
+      QT_QPA_PLATFORM: offscreen
+      # Windows runner 控制台默认 cp1252；构建脚本打印中文会 UnicodeEncodeError → 强制 utf-8
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Install Qt system libraries (headless, Linux only)
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libgl1 libegl1 libglib2.0-0 libxkbcommon0 libdbus-1-3 libx11-6
+      - name: Install
+        # dev 里有 babel：compile_locales 编译 .mo 需要（babel 是构建期工具，非运行时依赖）
+        # decrypt 必须装：pycryptodome 缺失时 PyInstaller 静态
+        # 分析看不见 Crypto → 不进包 → 发布产物里 Trae 加密库解密恒不可用，
+        # 而源码模式永远正常，只在干净机暴露——"看着有、实则无"。
+        # setup-uv@v5 不自动建 venv，uv sync 自动建 .venv 并安装 extras
+        run: uv sync --extra gui --extra build --extra decrypt --extra dev
+
+      - name: Verify decrypt extra
+        # H8 护栏：装了就该导得进；导入失败让 build job 直接红，而不是静默出一个残包
+        run: uv run python -c "import Crypto.Cipher.AES; print('pycryptodome ok')"
+
+      - name: Compile locales
+        # .mo 打进包（spec datas 收 app/gui/locales）；缺失则运行时 7 语全空
+        run: uv run python scripts/compile_locales.py
+
+      # PyInstaller onedir：产物在 dist/Experientia/（含可执行 + 依赖 + assets + locales）
+      - name: Build (PyInstaller)
+        run: uv run pyinstaller --noconfirm --clean experientia.spec
+
+      # ---------- 产物整形（与 README 安装说明的资产名一致；onedir = 整目录打包） ----------
+      - name: Package (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: |
+          Compress-Archive -Path dist/Experientia/* -DestinationPath experientia-windows-x64.zip
+          Get-FileHash experientia-windows-x64.zip -Algorithm SHA256
+
+      - name: Package (macOS)
+        if: matrix.os == 'macos-latest'
+        run: |
+          set -e
+          # spec 为 onedir（无 BUNDLE → 不产 .app）：直接压 onedir 目录成 dmg
+          hdiutil create -volname "Experientia" -srcfolder dist/Experientia \
+            -ov -format UDZO experientia-macos.dmg
+          shasum -a 256 experientia-macos.dmg
+
+      - name: Package (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          set -e
+          # v1.0 不套 AppImage 壳：直接压 onedir 目录
+          tar -czf experientia-linux-x64.tar.gz -C dist/Experientia .
+          sha256sum experientia-linux-x64.tar.gz
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: experientia-${{ matrix.target }}
+          path: |
+            experientia-windows-x64.zip
+            experientia-macos.dmg
+            experientia-linux-x64.tar.gz
+          if-no-files-found: ignore
