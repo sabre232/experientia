@@ -1,0 +1,3823 @@
+# Japanese translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-08-28 19:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "首页"
+msgstr "ホーム"
+
+msgid "经验库"
+msgstr "経験ライブラリ"
+
+msgid "我的方法"
+msgstr "私の手法"
+
+msgid "设置"
+msgstr "設定"
+
+msgid "运行中"
+msgstr "実行中"
+
+msgid "已连接运行中实例"
+msgstr "実行中のインスタンスに接続済み"
+
+msgid "自动记录"
+msgstr "自動記録"
+
+msgid "本周发现"
+msgstr "今週の発見"
+
+#, python-brace-format
+msgid "数据积累中：再完成 {n} 次同类任务，就能看到熟练度变化"
+msgstr "データ蓄積中：あと {n} 回同じタスクを完了すると、習熟度が変化します"
+
+msgid "待总结的经验"
+msgstr "要約待ちの経験"
+
+msgid "总结成方法"
+msgstr "メソッドにまとめる"
+
+msgid "正在总结…"
+msgstr "要約中…"
+
+msgid "未配置模型"
+msgstr "モデル未設定"
+
+msgid "添加模型"
+msgstr "モデルを追加"
+
+msgid "设为默认"
+msgstr "既定にする"
+
+msgid "总结用模型"
+msgstr "要約用モデル"
+
+msgid "默认"
+msgstr "デフォルト"
+
+msgid "类型"
+msgstr "タイプ"
+
+msgid "本地模型"
+msgstr "ローカルモデル"
+
+msgid "云端 API"
+msgstr "クラウド API"
+
+msgid "模型名"
+msgstr "モデル名"
+
+msgid "API Key（填一次，存系统钥匙串）"
+msgstr "API Key（1回だけ入力、OS のキーチェーンに保存）"
+
+msgid "保存"
+msgstr "保存"
+
+msgid "删除"
+msgstr "削除"
+
+msgid "确认"
+msgstr "確認"
+
+msgid "取消"
+msgstr "キャンセル"
+
+#, python-brace-format
+msgid "删除模型「{name}」？连带删除钥匙串里的 key"
+msgstr "モデル「{name}」を削除しますか？キーチェーン内の key も一緒に削除されます"
+
+msgid "Agent 接入指引（一键复制）"
+msgstr "Agent 接続ガイド（ワンクリックでコピー）"
+
+msgid "复制"
+msgstr "コピー"
+
+msgid "已复制到剪贴板"
+msgstr "クリップボードにコピーしました"
+
+#, python-brace-format
+msgid "其他 OpenAI 兼容工具：OPENAI_BASE_URL={url}"
+msgstr "その他の OpenAI 互換ツール：OPENAI_BASE_URL={url}"
+
+#, python-brace-format
+msgid "Claude Code：ANTHROPIC_BASE_URL={url}"
+msgstr "Claude Code：ANTHROPIC_BASE_URL={url}"
+
+#, python-brace-format
+msgid "Cursor：Settings → Models 填 {url}"
+msgstr "Cursor：Settings → Models に {url} を入力"
+
+msgid "（密钥在系统钥匙串）"
+msgstr "（キーはシステムのキーチェーンに保存）"
+
+msgid "（密钥存在配置里）"
+msgstr "（キーは設定ファイルに保存）"
+
+msgid "搜索"
+msgstr "検索"
+
+msgid "全部"
+msgstr "すべて"
+
+msgid "全部 agent"
+msgstr "全Agent"
+
+msgid "有效"
+msgstr "有効"
+
+msgid "纠正"
+msgstr "訂正"
+
+msgid "踩坑："
+msgstr "落とし穴："
+
+msgid "做法："
+msgstr "やり方："
+
+msgid "结果："
+msgstr "結果："
+
+msgid "已总结"
+msgstr "要約済み"
+
+msgid "没有匹配的经验"
+msgstr "一致する経験なし"
+
+msgid "反馈已记录"
+msgstr "フィードバックを記録しました"
+
+msgid "总结完成"
+msgstr "要約完了"
+
+#, python-brace-format
+msgid "总结失败：{err}"
+msgstr "要約失敗：{err}"
+
+msgid "数据目录"
+msgstr "データディレクトリ"
+
+msgid "打开文件夹"
+msgstr "フォルダを開く"
+
+msgid "版本"
+msgstr "バージョン"
+
+msgid "界面语言"
+msgstr "表示言語"
+
+msgid "开机自启"
+msgstr "起動時に自動実行"
+
+msgid "已探测 agent"
+msgstr "検出済み Agent"
+
+#, python-brace-format
+msgid "{n} 条"
+msgstr "{n} 件"
+
+#, python-brace-format
+msgid "{n} 次"
+msgstr "{n} 回"
+
+#, python-brace-format
+msgid "{n} 个 agent"
+msgstr "Agent {n} 件"
+
+#, python-brace-format
+msgid "{trunk} / {category}：{n} 条"
+msgstr "{trunk} / {category}：{n} 件"
+
+msgid "待总结"
+msgstr "要約待ち"
+
+msgid "AI 优化"
+msgstr "AI 最適化"
+
+msgid "AI 优化中…"
+msgstr "AI 最適化中…"
+
+msgid "AI 优化结果（确认后生效）"
+msgstr "AI 最適化結果（確認後に適用）"
+
+msgid "一句话描述（进 frontmatter）"
+msgstr "一行の説明（frontmatter に入る）"
+
+msgid "你的偏好"
+msgstr "あなたの好み"
+
+msgid "偏好全文（Markdown）"
+msgstr "好みの全文（Markdown）"
+
+msgid "偏好已保存"
+msgstr "好みを保存しました"
+
+msgid "偏好已重新归纳"
+msgstr "好みを再帰納しました"
+
+msgid "全部关闭（一键静音）"
+msgstr "すべて無効（ワンクリックでミュート）"
+
+msgid "关闭"
+msgstr "閉じる"
+
+msgid "删掉后不再自动带上；记录留痕（你的判断优先于机器归纳）"
+msgstr "削除後は自動で付与されません。記録は残ります（あなたの判断が機械の帰納より優先されます）"
+
+msgid "删除这个节点？"
+msgstr "このノードを削除しますか？"
+
+msgid "原："
+msgstr "変更前："
+
+msgid "否决这条坑？"
+msgstr "この失敗を却下しますか？"
+
+msgid "踩过的坑"
+msgstr "経験した失敗"
+
+msgid "已删除（归档 30 天可恢复）"
+msgstr "削除済み（30 日間はアーカイブから復元可）"
+
+msgid "已否决并从方法中删除"
+msgstr "却下し、手法から削除しました"
+
+msgid "记住了"
+msgstr "記憶しました"
+
+msgid "已改写"
+msgstr "書き換え済み"
+
+#, python-brace-format
+msgid "已清理 {n} 条失效修改"
+msgstr "無効になった変更を {n} 件クリアしました"
+
+#, python-brace-format
+msgid "已选 {n} 条（跨 {c} 个类别）"
+msgstr "{n} 件選択済み（{c} カテゴリ横断）"
+
+msgid "应用"
+msgstr "適用"
+
+#, python-brace-format
+msgid "归纳完成：保留 {a} 条确认 / 新 {b} 条"
+msgstr "帰納完了：確認済み {a} 件を保持 / 新規 {b} 件"
+
+msgid "当前任务"
+msgstr "現在のタスク"
+
+msgid "恢复默认"
+msgstr "デフォルトに戻す"
+
+msgid "成长"
+msgstr "成長"
+
+msgid "我的偏好"
+msgstr "私の好み"
+
+msgid "搜索经验（task/state/action）"
+msgstr "経験を検索（task/state/action）"
+
+msgid "改写"
+msgstr "書き換え"
+
+msgid "改写后的内容"
+msgstr "書き換え後の内容"
+
+msgid "改写这条"
+msgstr "これを書き換える"
+
+msgid "改："
+msgstr "修正後："
+
+msgid "暂无通知"
+msgstr "通知はまだありません"
+
+#, python-brace-format
+msgid "有 {n} 条你改过的内容，对应的方法条目已升级或淘汰，改动已失效"
+msgstr "{n} 件の変更内容は、対応するメソッドエントリが更新・廃止されたため無効になりました"
+
+msgid "查看轨迹"
+msgstr "軌跡を見る"
+
+msgid "标准流程"
+msgstr "標準手順"
+
+msgid "正在重新归纳…"
+msgstr "再帰納中…"
+
+msgid "没有可回溯的低 G 经验"
+msgstr "遡れる低 G の経験なし"
+
+msgid "这里看到的是每次任务自动带上的内容——开关和改写只改你改过的部分，不动方法原文"
+msgstr "各タスクに自動で付与される内容です。スイッチと書き換えはあなたの変更部分のみに影響し、メソッド原文は変更されません"
+
+msgid "清理失效修改"
+msgstr "無効な変更をクリア"
+
+msgid "生效方式"
+msgstr "発動方式"
+
+msgid "用户确认"
+msgstr "ユーザー確認済み"
+
+msgid "经验要点"
+msgstr "経験のポイント"
+
+msgid "编辑"
+msgstr "編集"
+
+msgid "编辑偏好"
+msgstr "好みを編集"
+
+msgid "编辑时间线节点"
+msgstr "タイムラインノードを編集"
+
+msgid "自动归纳，可编辑；标「用户确认」的条目不会被后续归纳覆盖"
+msgstr "自動帰納、編集可能。「ユーザー確認済み」とした項目は後の帰納で上書きされません"
+
+msgid "节点内容"
+msgstr "ノード内容"
+
+#, python-brace-format
+msgid "行尾加「{mark}」= 该条权重更高，后续归纳不覆盖"
+msgstr "行末に「{mark}」を追加 = その項目の重みを上げ、後の帰納で上書きしない"
+
+msgid "留意中"
+msgstr "見守り中"
+
+msgid "这个类别还没有可自动带上的内容"
+msgstr "このカテゴリーには自動で付与できるものがまだありません"
+
+msgid "这条不对，删掉"
+msgstr "これは違う、削除する"
+
+msgid "通知"
+msgstr "通知"
+
+msgid "重新归纳"
+msgstr "再帰納"
+
+#, python-brace-format
+msgid "（{n} 条）"
+msgstr "（{n} 件）"
+
+msgid "（超出自整理阈值）"
+msgstr "（自動整理のしきい値を超過）"
+
+msgid "方法沉淀"
+msgstr "手法の蓄積"
+
+msgid "方法升级"
+msgstr "手法のアップグレード"
+
+msgid "成长报告"
+msgstr "成長レポート"
+
+msgid "推送以系统级原生通知弹出（像 Windows 通知那样）"
+msgstr "通知はシステムレベルのネイティブ通知として表示されます（Windows の通知のように）"
+
+msgid "一直生效"
+msgstr "常に有効"
+
+msgid "AI 判断相关时"
+msgstr "AI が関連と判断したとき"
+
+msgid "我提及时才用"
+msgstr "自分が言及したときだけ"
+
+msgid "每次必须发生，绕不过去"
+msgstr "毎回必ず発生、迂回不可"
+
+msgid "模板库加载失败"
+msgstr "テンプレートライブラリの読み込みに失敗しました"
+
+msgid "无原生范本（用英文版）"
+msgstr "ネイティブ版なし（英語版を使用）"
+
+msgid "导入"
+msgstr "インポート"
+
+#, python-brace-format
+msgid "已导入模板「{name}」"
+msgstr "テンプレート「{name}」をインポートしました"
+
+msgid "已恢复默认"
+msgstr "既定に復元しました"
+
+msgid "导出"
+msgstr "エクスポート"
+
+msgid "方法和坑"
+msgstr "方法と失敗"
+
+msgid "最近 30 天"
+msgstr "直近 30 日"
+
+msgid "最近 90 天"
+msgstr "直近 90 日"
+
+msgid "生成中…"
+msgstr "生成中…"
+
+#, python-brace-format
+msgid "已保存到 {path}"
+msgstr "{path} に保存しました"
+
+#, python-brace-format
+msgid "导出失败：{err}"
+msgstr "エクスポート失敗：{err}"
+
+msgid "打包中…"
+msgstr "パッケージ作成中…"
+
+#, python-brace-format
+msgid "全量包已导出到 {dest}（{n} 个文件）"
+msgstr "フルパッケージを {dest} にエクスポートしました（{n} 件のファイル）"
+
+msgid "全量打包"
+msgstr "フルパッケージ化"
+
+msgid "粒度"
+msgstr "粒度"
+
+msgid "生成"
+msgstr "生成"
+
+msgid "版本历史"
+msgstr "バージョン履歴"
+
+#, python-brace-format
+msgid "已保存为 {name} v{n}"
+msgstr "{name} v{n} として保存しました"
+
+msgid "查看"
+msgstr "表示"
+
+msgid "对比上一版"
+msgstr "前の版と差分"
+
+#, python-brace-format
+msgid "版本对比 v{old} → v{new}"
+msgstr "バージョン比較 v{old} → v{new}"
+
+msgid "还没有保存过版本"
+msgstr "まだ保存されたバージョンはありません"
+
+#, python-brace-format
+msgid "自启设置失败：{err}"
+msgstr "起動時自動実行の設定に失敗：{err}"
+
+msgid "移除"
+msgstr "削除"
+
+#, python-brace-format
+msgid "未配置——点「配置接入」一键写入 {path}（可重复执行，可移除）"
+msgstr "未設定——「接続を設定」をタップして {path} に書き込む（繰り返し可、削除可）"
+
+#, python-brace-format
+msgid "配置失败：{err}"
+msgstr "設定に失敗しました：{err}"
+
+#, python-brace-format
+msgid "已写入 {path}（事件：{events}）"
+msgstr "{path} に書き込みました（イベント：{events}）"
+
+msgid "已移除接入"
+msgstr "接続を削除しました"
+
+# ---------- 空状态文案（v2：标题/正文拆分） ----------
+msgid "先用 agent 干点活"
+msgstr "まず agent に少し仕事をさせてください"
+
+msgid "先总结出一个方法"
+msgstr "まず 1 つメソッドにまとめてください"
+
+msgid "全部总结完毕"
+msgstr "すべてまとめ終わりました"
+
+msgid "换个关键词，或等 agent 多干几活"
+msgstr "別のキーワードを試すか、agent にもう少し仕事をさせてください"
+
+msgid "数据积累中"
+msgstr "データ蓄積中"
+
+msgid "暂无方法"
+msgstr "まだメソッドはありません"
+
+msgid "没有可预览的任务类别"
+msgstr "プレビューできるタスクカテゴリがありません"
+
+msgid "用 agent 干活后这里会出现成长曲线"
+msgstr "agent に仕事をしてもらったら、ここに成長曲線が表示されます"
+
+msgid "经验库还是空的"
+msgstr "経験ライブラリはまだ空です"
+
+msgid "经验攒够后这里会出现方法，点「总结成方法」即可"
+msgstr "経験が十分たまるとここにメソッドが表示されます。「メソッドにまとめる」をクリック"
+
+msgid "从你的纠正和反复出现的坑里自动总结"
+msgstr "あなたの修正や繰り返し現れる落とし穴から自動でまとめます"
+
+msgid "还没有偏好"
+msgstr "まだ好みはありません"
+
+msgid "还没有踩过的坑"
+msgstr "まだ失敗はありません"
+
+# ---------- P0 术语整改（用户化）----------
+msgid "名称"
+msgstr "名前"
+
+msgid "Anthropic API"
+msgstr "Anthropic API"
+
+msgid "关键词（如：投标）"
+msgstr "キーワード（例：入札）"
+
+msgid "踩坑"
+msgstr "落とし穴"
+
+#, python-brace-format
+msgid "含「{kw}」时"
+msgstr "「{kw}」を含む場合"
+
+msgid "总结用"
+msgstr "まとめ用"
+
+msgid "删除 = 归档（30 天内可恢复），删掉的条目立即停止自动带上"
+msgstr "削除 = アーカイブ（30 日間復元可）。削除した項目はすぐに自動付与から外れます"
+
+# ---------- P1 泄漏清零（内部指标用户化）----------
+msgid "已验证"
+msgstr "検証済み"
+
+msgid "部分验证"
+msgstr "部分的に検証済み"
+
+msgid "待验证"
+msgstr "検証待ち"
+
+#, python-brace-format
+msgid "（出现 {n} 次）"
+msgstr "（{n} 回発生）"
+
+#, python-brace-format
+msgid "占用 {used} / {budget}"
+msgstr "使用 {used} / {budget}"
+
+# ---------- P0 术语修订（生态词保留原文）----------
+msgid "导出 Skill"
+msgstr "Skill エクスポート"
+
+#, python-brace-format
+msgid "导出 Skill 失败：{err}"
+msgstr "Skill エクスポートに失敗：{err}"
+
+msgid "正在导出 Skill…"
+msgstr "Skill をエクスポート中…"
+
+msgid "SKILL.md 预览"
+msgstr "SKILL.md プレビュー"
+
+msgid "先填 Skill 名再保存"
+msgstr "保存前に Skill 名を入力してください"
+
+msgid "先填 Skill 名再查看版本"
+msgstr "バージョンを見る前に Skill 名を入力してください"
+
+msgid "提炼成每次任务自动带上的方法（SKILL.md 格式，可供 Claude Code 等直接使用）"
+msgstr "タスクごとに自動で付く方法に蒸留（SKILL.md 形式、Claude Code などがそのまま使用可能）"
+
+msgid "失败模式——自动记录每次任务反复出错的模式"
+msgstr "失敗モード——タスクごとに繰り返し起こるエラーのパターンを自動記録"
+
+msgid "接入"
+msgstr "接続"
+
+# ---------- P2 IA 收敛（11→6 导航 + 聚合页）----------
+msgid "我的经验"
+msgstr "マイ経験"
+
+msgid "经验"
+msgstr "経験"
+
+msgid "方法"
+msgstr "方法"
+
+msgid "偏好"
+msgstr "好み"
+
+msgid "原始对话轨迹"
+msgstr "元の会話の軌跡"
+
+msgid "提炼出的可复用做法（可导出 SKILL.md）"
+msgstr "経験から抽出した再利用可能な手法（SKILL.md としてエクスポート可）"
+
+msgid "模型行为偏好（自动带上）"
+msgstr "モデルの行動の好み（自動で付く）"
+
+msgid "模型与接入"
+msgstr "モデルと接続"
+
+msgid "每次任务自动带上什么"
+msgstr "タスクごとに自動で付くもの"
+
+msgid "按任务类型分组，点右侧「总结成方法」"
+msgstr "タスク種別でグループ化。右の「方法にまとめる」をクリック"
+
+msgid "经验记录"
+msgstr "経験レコード"
+
+msgid "还没有经验"
+msgstr "まだ経験はありません"
+
+msgid "删掉后不再自动带上；想找回可以从模板库重新导入"
+msgstr "削除すると自動ではもたなくなります。テンプレートライブラリから再度取り込めます"
+
+msgid "已删除"
+msgstr "削除しました"
+
+msgid "时间范围（仅成长报告）"
+msgstr "期間（成長レポートのみ）"
+
+msgid "精选"
+msgstr "セレクト"
+
+#, python-brace-format
+msgid "最近记录：{agent} {n} 次"
+msgstr "最近の記録：{agent} {n} 回"
+
+msgid "接入自检"
+msgstr "接続チェック"
+
+msgid "正在检查接入…"
+msgstr "接続を確認中…"
+
+msgid "接入正常"
+msgstr "接続は正常です"
+
+#, python-brace-format
+msgid "接入失败：{detail}"
+msgstr "接続に失敗しました：{detail}"
+
+# ---------- W2 采集管理 ----------
+msgid "采集"
+msgstr "キャプチャ"
+
+#, python-brace-format
+msgid "在采集 {n}/{m} 个"
+msgstr "キャプチャ中 {n}/{m}"
+
+#, python-brace-format
+msgid "最近 {at}"
+msgstr "直近 {at}"
+
+# ---------- W3 蒸馏升级 ----------
+msgid "状态"
+msgstr "状態"
+
+msgid "做法"
+msgstr "手法"
+
+#, python-brace-format
+msgid "来自 {n} 条记录"
+msgstr "{n} 件の記録から"
+
+#, python-brace-format
+msgid "{trunk} / {category}：来自 {n} 条记录"
+msgstr "{trunk} / {category}：{n} 件の記録から"
+
+#, python-brace-format
+msgid "来自 {agent}（{at}，{n} 轮）：「{first}」"
+msgstr "{agent}（{at}、{n} 回）：「{first}」"
+
+msgid "来源记录已不在经验库（可能已被合并淘汰）"
+msgstr "出典記録は経験ライブラリにありません（統合または淘汰された可能性があります）"
+
+# ---------- W4 工作流洞察 ----------
+msgid "洞察"
+msgstr "インサイト"
+
+msgid "忽略"
+msgstr "無視"
+
+msgid "P0 红线"
+msgstr "P0 レッドライン"
+
+msgid "P1 必须"
+msgstr "P1 必須"
+
+msgid "P2 应该"
+msgstr "P2 すべき"
+
+msgid "P3 建议"
+msgstr "P3 推奨"
+
+msgid "P4 优化"
+msgstr "P4 任意"
+
+#, python-brace-format
+msgid "红线：{d}"
+msgstr "レッドライン：{d}"
+
+msgid "全部领域"
+msgstr "すべての領域"
+
+msgid "搜索模板名 / 描述 / 关键词"
+msgstr "テンプレート名 / 説明 / キーワードを検索"
+
+msgid "没有匹配的模板"
+msgstr "該当するテンプレートがありません"
+
+# ---------- M1 信息架构重构（分组导航：使用/管理/系统 + Hooks） ----------
+msgid "使用"
+msgstr "使用"
+
+msgid "管理"
+msgstr "管理"
+
+msgid "系统"
+msgstr "システム"
+
+msgid "Hooks"
+msgstr "Hooks"
+
+msgid "在配置文件 ~/.codex/config.toml 里加一段 [model_providers.experientia]：base_url 填上面的地址、wire_api = \"chat\"，再在文件顶部把 model_provider 设为 experientia。"
+msgstr "~/.codex/config.toml に [model_providers.experientia] ブロックを追加：base_url = 上のアドレス、wire_api = \"chat\"。ファイル上部で model_provider = \"experientia\" を設定"
+
+msgid "暂不支持自定义地址（只接受官方模型的 Key，且请求经 Cursor 服务器中转），无法指到这里；它的会话可自动记录，见下方「采集」。"
+msgstr "カスタムアドレス非対応（公式モデルの Key のみ、リクエストは Cursor サーバー経由）。ここに向けられません。セッションは自動記録されます（下の「キャプチャ」参照）"
+
+msgid "只支持官方 Gemini 协议，没有可改的兼容地址入口，无法指到这里；它的会话可自动记录，见下方「采集」。"
+msgstr "公式 Gemini プロトコルのみ対応。変更できる互換アドレス入口はなく、ここに向けられません。セッションは自動記録されます（下の「キャプチャ」参照）"
+
+msgid "我的 Hooks"
+msgstr "マイ Hooks"
+
+msgid "占用"
+msgstr "使用量"
+
+msgid "全选"
+msgstr "すべて選択"
+
+msgid "已复制"
+msgstr "コピーしました"
+
+msgid "复制地址"
+msgstr "アドレスをコピー"
+
+msgid "自定义"
+msgstr "カスタム"
+
+msgid "批量启用"
+msgstr "選択を有効化"
+
+msgid "批量删除"
+msgstr "選択を削除"
+
+msgid "导出 md"
+msgstr "md をエクスポート"
+
+msgid "导出 Hooks"
+msgstr "Hooks をエクスポート"
+
+msgid "每次必须发生（锁定）"
+msgstr "毎回必ず発生（固定）"
+
+msgid "失败模式（自动记录，留意中不自动带上）"
+msgstr "失敗モード（自動記録、見守り中は自動付与なし）"
+
+msgid "越用越懂你的 AI 搭档"
+msgstr "使うほどあなたを理解する AI 相棒"
+
+msgid "它记得你踩过的坑，也记得那些好用的妙招"
+msgstr "あなたが踏んだ落とし穴も、効いたコツも覚えています"
+
+msgid "每次协作都在成长，下次开口，经验早已备好"
+msgstr "毎回の協業で成長し、次に頼むときには経験がすでに準備済み"
+
+msgid "数据不出这台机器"
+msgstr "データはこのマシンを出ません"
+
+msgid "开机自启：已开"
+msgstr "起動時に自動開始：オン"
+
+msgid "开机自启：已关（设置里可打开）"
+msgstr "起動時に自動開始：オフ（設定でオンにできます）"
+
+msgid "下一步"
+msgstr "次へ"
+
+msgid "它在后台帮你做三件事"
+msgstr "背景で3つのことを代わってやります"
+
+#, python-brace-format
+msgid "已在记录 {n} 个 agent"
+msgstr "{n} 個の agent を記録中"
+
+msgid "还没发现 agent，会持续探测"
+msgstr "まだ agent が見つかりません——探し続けます"
+
+#, python-brace-format
+msgid "已沉淀 {n} 套方法"
+msgstr "方法が {n} 套路ま"
+
+msgid "完成几个任务后开始沉淀"
+msgstr "いくつかのタスク後に始まります"
+
+msgid "下次自动带上"
+msgstr "次に自動で持っていく"
+
+msgid "经验和 Hook 会自动带上"
+msgstr "経験と Hook が自動で持たれます"
+
+msgid "配好模型后开始带上"
+msgstr "モデルを設定すると始まります"
+
+msgid "导入或总结出 Hook 后开始带上"
+msgstr "Hook を導入・まとめると始まります"
+
+msgid "你现在要做的三件事"
+msgstr "今やること 3 つ"
+
+msgid "接入一个 agent"
+msgstr "agent を 1 つ接続"
+
+#, python-brace-format
+msgid "已发现 {n} 个"
+msgstr "{n} 個見つかりました"
+
+msgid "还没发现"
+msgstr "まだありません"
+
+msgid "去接入"
+msgstr "接続へ"
+
+msgid "让它在后台记录"
+msgstr "背景で記録させましょう"
+
+msgid "默认允许，设置里可随时关"
+msgstr "既定で許可、設定でいつでもオフに"
+
+msgid "完成一次真实的 coding 任务"
+msgstr "実際の coding タスクを 1 回"
+
+msgid "用你的 agent 干一单，回来看看它总结了什么"
+msgstr "agent で 1 回仕事して、何が変わったか見に戻ろう"
+
+msgid "越用越熟，它已经就位"
+msgstr "使うほど親しく——もう準備完了"
+
+msgid "它会在后台默默积累，你只管用 agent 干活"
+msgstr "背景で静かに積み上がります。あなたは agent で仕事に集中"
+
+msgid "进入主界面"
+msgstr "メイン画面へ"
+
+msgid "上一步"
+msgstr "戻る"
+
+#, python-brace-format
+msgid "已总结 {n} 套方法"
+msgstr "方法が {n} 套路まりました"
+
+# ---------- H-A0 多 agent 配装 + H-O1 文件范围（Hooks 双视图） ----------
+msgid "全局"
+msgstr "全体"
+
+msgid "全部工具"
+msgstr "全てのツール"
+
+msgid "指定工具"
+msgstr "特定のツール"
+
+#, python-brace-format
+msgid "{n} 个工具"
+msgstr "{n} 個のツール"
+
+msgid "未配装"
+msgstr "未割り当て"
+
+msgid "生效工具"
+msgstr "適用ツール"
+
+msgid "生效范围"
+msgstr "適用範囲"
+
+msgid "所有任务"
+msgstr "すべてのタスク"
+
+msgid "针对特定文件"
+msgstr "特定のファイルのみ"
+
+msgid "文件范围（如 *.test.* / src/api/**，多个用逗号分隔）"
+msgstr "ファイル範囲（例: *.test.* / src/api/**、複数ならカンマ区切り）"
+
+#, python-brace-format
+msgid "仅 {globs}"
+msgstr "{globs} のみ"
+
+msgid "从此工具移除"
+msgstr "このツールから除外"
+
+msgid "改为指定工具"
+msgstr "特定のツールへ変更"
+
+msgid "删除规则"
+msgstr "ルールを削除"
+
+msgid "已不再带给该工具，规则保留"
+msgstr "このツールへの持ち込みを停止しました（ルールは保持）"
+
+msgid "已改为只带给所选工具"
+msgstr "選択したツールにだけ持っていくようになりました"
+
+msgid "当前是全部工具通用，要单独调整需先转成指定"
+msgstr "現在全てのツールで共通です。個別調整するには先に特定のツールへ変更してください"
+
+msgid "还没有识别到工具"
+msgstr "まだツールが検出されていません"
+
+msgid "接上任意一个工具（见「接入」页）后，这里就能按工具配装规则"
+msgstr "ツールを接続すると（「接続」ページ参照）、ここでツールごとにルールを設定できます"
+
+msgid "这个工具还没有专属规则"
+msgstr "このツール用のルールはまだありません"
+
+msgid "全局规则仍会生效；想只给它加一条，点下面的按钮。"
+msgstr "全体ルールは引き続き有効です。このツールだけに追加する場合は下のボタンを"
+
+msgid "为此工具新建规则"
+msgstr "このツールにルールを追加"
+
+msgid "指定工具至少要勾选一个（一个都不勾 = 哪个工具都不带上）"
+msgstr "少なくとも 1 つのツールを選択してください（全て未選択 = どのツールにも持っていけない）"
+
+msgid "按规则"
+msgstr "ルールごと"
+
+msgid "按工具"
+msgstr "ツールごと"
+
+msgid "Skill 名（留空 = AI 起说人话的短名）"
+msgstr "Skill 名（空欄 = AI がわかりやすい短い名前をつける）"
+
+msgid "分类（留空 = 不变）"
+msgstr "分類（空欄 = 変更しない）"
+
+msgid "只导出勾选的经验（不勾 = 范围内全部）"
+msgstr "チェックした経験だけ書き出す（チェックなし = 範囲内すべて）"
+
+msgid "已改名"
+msgstr "名前を変更しました"
+
+msgid "搜索经验（task/做法/踩坑）"
+msgstr "経験を検索（課題／做法／ハマりポイント）"
+
+msgid "改分类会把方法和它名下的经验一起挪过去；经验库、成长曲线自动跟随"
+msgstr "分類を変えると、その方法と名義下の経験が一緒に移動します。経験ライブラリと成長曲線は自動で追従"
+
+msgid "改名"
+msgstr "名前の変更"
+
+msgid "改名这个方法"
+msgstr "この方法の名前を変更"
+
+msgid "时间范围（仅阶段经验）"
+msgstr "期間（段階経験のみ）"
+
+msgid "显示名（说人话，如「投标报价核算」）"
+msgstr "表示名（わかりやすい言葉で、例「入札見積計算」）"
+
+msgid "未启用"
+msgstr "無効"
+
+msgid "本月"
+msgstr "今月"
+
+#, python-brace-format
+msgid "来源：{agents}"
+msgstr "出典：{agents}"
+
+msgid "没有符合条件的经验"
+msgstr "条件に合う経験がありません"
+
+msgid "清空"
+msgstr "クリア"
+
+msgid "留空 = 保持当前名字"
+msgstr "空欄 = 現在の名前を保持"
+
+msgid "请至少勾选一个 Hook"
+msgstr "Hook を 1 つ以上チェックしてください"
+
+msgid "请至少勾选一个方法"
+msgstr "方法を 1 つ以上チェックしてください"
+
+msgid "请至少勾选一条经验"
+msgstr "経験を 1 件以上チェックしてください"
+
+msgid "还没有 Hook（先到 Hooks 页添加）"
+msgstr "まだ Hook がありません（Hooks ページで追加してください）"
+
+msgid "还没有方法（先在方法页总结）"
+msgstr "まだ方法がありません（方法ページで先にまとめましょう）"
+
+msgid "阶段经验"
+msgstr "段階経験"
+
+#, python-brace-format
+msgid "（{n} 条你改过的内容已失效，可到「模型会看到什么」页清理）"
+msgstr "（あなたが書き換えた内容 {n} 件が無効になりました。「モデルが見ているもの」ページで片付けてください）"
+
+msgid "应当（每次自动带上的正文，可多行）"
+msgstr "应当（毎回自動で付随する本文、複数行可）"
+
+msgid "绝不（反例，每行一条；留空 = 无反例）"
+msgstr "決してやってはいけない（反例、1 行 1 件。空欄 = 反例なし）"
+
+#, python-brace-format
+msgid "绝不：{d}"
+msgstr "絶対に：{d}"
+
+msgid "复制命令"
+msgstr "コマンドをコピー"
+
+#, python-brace-format
+msgid "v{v} · 更新 {d}"
+msgstr "v{v} · 更新 {d}"
+
+msgid "报告"
+msgstr "レポート"
+
+#, python-brace-format
+msgid "最近更新：{d}"
+msgstr "最終更新：{d}"
+
+#, python-brace-format
+msgid "最近更新：{d}（v{v}）"
+msgstr "最終更新：{d}（v{v}）"
+
+#, python-brace-format
+msgid "沉淀依据 {n} 条经验（成功 {s} / 踩坑 {f}），可在经验库按类别回看"
+msgstr "{n} 件の経験から沉淀（成功 {s} / 失敗 {f}）、経験ライブラリでカテゴリ別に確認できます"
+
+#, python-brace-format
+msgid "置信度：{c}"
+msgstr "信頼度：{c}"
+
+#, python-brace-format
+msgid "首次沉淀：{d}"
+msgstr "初回沉淀：{d}"
+
+msgid "（这个方法的正文还是空的，先总结一次）"
+msgstr "（この方法の本文がまだ空です——先に一度まとめてください）"
+
+msgid "导出 PNG"
+msgstr "PNG をエクスポート"
+
+msgid "正在导出…"
+msgstr "エクスポート中…"
+
+msgid "每天 21:00 推送积累概况（当天无积累不发）"
+msgstr "毎日 21:00 に蓄積サマリーを通知（当日の蓄積がなければ通知しない）"
+
+msgid "熟练度档位升档（中/高）时推送"
+msgstr "習熟度が上がったとき（中/高）に通知"
+
+msgid "接入模型只是为了更好地辅助总结；不接也能继续用，经验照常记录、总结照常生成。"
+msgstr "モデルを接続するのは、まとめをより良くするためのものです。任意なので、未接続でも使い続けられます——経験は記録され、まとめは通常どおり生成されます。"
+
+msgid "分工具接入说明"
+msgstr "ツール別の接続手順"
+
+# ---------- Data sovereignty ----------
+msgid "数据主权"
+msgstr "データ主権"
+
+msgid "一键彻底删除"
+msgstr "データを完全削除"
+
+msgid "你的数据只在本机：一键导出带走，一键彻底删除不留痕。"
+msgstr "データはこの端末内にあります：一括エクスポートで持ち出したり、ワンクリックで完全削除（痕跡なし）したりできます。"
+
+msgid "确认删除"
+msgstr "完全削除の確認"
+
+msgid "全部数据已彻底删除"
+msgstr "全データを削除しました"
+
+#, python-brace-format
+msgid "数据已删除，{n} 个占用中文件未删：{names}"
+msgstr "データは削除しました。使用中の {n} 個のファイルは未削除です：{names}"
+
+# ---------- Errors (audit fix) ----------
+msgid "本地 API 未连接"
+msgstr "ローカル API に接続できません"
+
+msgid "本地 API 鉴权失败（token 不一致，请重启应用）"
+msgstr "ローカル API の認証に失敗しました（トークンが一致しません。アプリを再起動してください）"
+
+msgid "（读取失败）"
+msgstr "（読み取り失敗）"
+
+msgid "数据目录不可用"
+msgstr "データディレクトリが利用できません"
+
+msgid "其他"
+msgstr "その他"
+
+msgid "未分类"
+msgstr "未分類"
+
+msgid "万"
+msgstr "万"
+
+#, python-brace-format
+msgid "报告打开失败：{err}"
+msgstr "レポートを開けませんでした：{err}"
+
+msgid "这个方法已不存在（可能已被删除）"
+msgstr "このメソッドは存在しません（削除された可能性があります）"
+
+msgid "方法总数"
+msgstr "メソッド数"
+
+msgid "新坑"
+msgstr "障害"
+
+msgid "已确认偏好"
+msgstr "確認済み設定"
+
+msgid "熟练类别"
+msgstr "熟練カテゴリ"
+
+msgid "方法动态"
+msgstr "メソッド更新"
+
+msgid "成长动态"
+msgstr "成長動態"
+
+msgid "每日总结"
+msgstr "デイリーサマリー"
+
+msgid "系统通知"
+msgstr "システム通知"
+
+msgid "方法沉淀/升级、新坑固化、偏好新增时推送"
+msgstr "メソッドの蒸留/アップグレード、失敗パターンの確定、プリファレンス追加時"
+
+msgid "版本更新、洞察提醒等系统消息（不计入每日上限）"
+msgstr "バージョン更新、インサイト通知など（デイリー上限に含まれない）"
+
+# ---------- Export ----------
+msgid "数据导出"
+msgstr "データエクスポート"
+
+msgid "规则导出"
+msgstr "ルールエクスポート"
+
+msgid "技能导出"
+msgstr "スキルエクスポート"
+
+msgid "导出我的 Hooks（带 frontmatter）"
+msgstr "Hooks をエクスポート（frontmatter 付き）"
+
+msgid "经验记录 · 方法和坑 · 成长报告 · 偏好画像 · 阶段经验"
+msgstr "経験記録 · 方法と失敗 · 成長レポート · プリファレンス · 段階経験"
+
+# ---------- Notifications ----------
+msgid "推送上限：每天 2 条（「系统通知」不计入）"
+msgstr "プッシュ上限：1日2件（システム通知は含まれません）"
+
+# ---------- Misc ----------
+msgid "继续看报告"
+msgstr "レポートを続けて見る"
+
+msgid "语言切换失败"
+msgstr "言語の切り替えに失敗しました"
+
+msgid "删除中…"
+msgstr "削除中…"
+
+msgid "将删除数据目录里的全部数据（经验、方法、偏好、规则、会话记录、配置），不可撤销。删除前可先在导出页做全量导出备份。"
+msgstr "データディレクトリ内のすべてのデータ（経験・方法・好み・ルール・セッション記録・設定）を削除します。元に戻せません。削除前にエクスポートページで全量バックアップを取れます。"
+
+msgid "就绪"
+msgstr "準備完了"
+
+msgid "已保存"
+msgstr "保存しました"
+
+msgid "显示"
+msgstr "表示"
+
+msgid "还没有其他已知工具"
+msgstr "他に既知のツールはまだありません"
+
+msgid "退出"
+msgstr "終了"
+
+# ---------- 界面外观（P2 dark mode） ----------
+msgid "界面外观"
+msgstr "外観"
+
+msgid "跟随系统"
+msgstr "システムに従う"
+
+msgid "亮色"
+msgstr "ライト"
+
+msgid "深色"
+msgstr "ダーク"
+
+msgid "外观切换失败"
+msgstr "外観の切り替えに失敗しました"
+
+msgid "运行状态"
+msgstr "実行状態"
+
+#. 通知批量汇总气泡：积累 N 条才提示一次
+#, python-brace-format
+msgid "已积累 {n} 条新动态"
+msgstr "新着 {n} 件がたまりました"
+
+msgid "架构与设计"
+msgstr "アーキテクチャと設計"
+
+msgid "代码风格与格式"
+msgstr "コードスタイルとフォーマット"
+
+msgid "测试与验证"
+msgstr "テストと検証"
+
+msgid "文档与沟通"
+msgstr "ドキュメントとコミュニケーション"
+
+msgid "安全与合规"
+msgstr "セキュリティとコンプライアンス"
+
+msgid "工作流与流程"
+msgstr "ワークフローとプロセス"
+
+msgid "模板正文由中文原版经 AI 翻译，个别措辞可能不准——导入后建议过一遍再启用"
+msgstr "テンプレート本文は中国語の原版を AI で翻訳したもので、表現が不正確な場合があります。取り込んだ後、有効にする前に一度確認することをおすすめします"
+
+#. 首页零状态卡（设计方案 F-B6）
+msgid "还没有记录"
+msgstr "まだ記録がありません"
+
+#. 洞察行按钮（设计方案 F-B4）
+msgid "稍后"
+msgstr "後で"
+
+msgid "正常"
+msgstr "正常"
+
+# ---------- 加密 agent 兜底建议 ----------
+#, python-brace-format
+msgid "{name} 的数据库已加密，无法直接读取本地文件"
+msgstr "{name} のデータベースは暗号化されており、ローカルファイルを直接読み取れません"
+
+msgid "已加密"
+msgstr "暗号化済み"
+
+#, python-brace-format
+msgid "⬥ 走代理捕获：将工具代理地址设为 {url}（推荐）"
+msgstr "⬥ プロキシキャプチャを使用：ツールのプロキシを {url} に設定（推奨）"
+
+msgid "⬥ 自动解密：启动 Trae 后，系统会自动尝试从进程内存提取密钥解密"
+msgstr "⬥ 自動復号：Trae 起動後、システムがプロセスメモリからキーを抽出して復号を試みます"
+
+msgid "⬥ 社区工具：Oh-My-Trae/trae-db-decrypt（需管理员权限）"
+msgstr "⬥ コミュニティツール：Oh-My-Trae/trae-db-decrypt（管理者権限が必要）"
+
+msgid "⬥ 自动解密：已知全局硬编码密钥，系统会自动解密 trajectory 文件"
+msgstr "⬥ 自動復号：既知のグローバルな固定キーで trajectory ファイルを自動的に復号します"
+
+# experientia-auto-add: hook observed states (memorax A2)
+msgid "刚刚"
+msgstr "たった今"
+
+#, python-brace-format
+msgid "{n} 分钟前"
+msgstr "{n} 分前"
+
+#, python-brace-format
+msgid "{n} 小时前"
+msgstr "{n} 時間前"
+
+#, python-brace-format
+msgid "{n} 天前"
+msgstr "{n} 日前"
+
+#, python-brace-format
+msgid "已写入配置：{events}。重启 Claude Code 并开始一次会话后自动验证"
+msgstr "設定に書き込み済み：{events}。Claude Code を再起動してセッションを開始すると自動検証されます。"
+
+msgid "⬥ 权限：Windows 需管理员、macOS 需关闭 SIP；失败时先抢救渲染日志/社区预解密文件（不丢数据）"
+msgstr "⬥ 権限: Windowsは管理者権限、macOSはSIP無効化が必要。失敗時はレンダーログ/コミュニティ復号ファイルを先に確保（データ損失なし）"
+
+msgid "插件包"
+msgstr "プラグインパッケージ"
+
+msgid "实时钩子（Claude Code）"
+msgstr "リアルタイムフック（Claude Code）"
+
+msgid "Claude Code 专用"
+msgstr "Claude Code 専用"
+
+#, python-brace-format
+msgid "插件包已生成到 {path}"
+msgstr "プラグインパッケージを生成しました: {path}"
+
+#, python-brace-format
+msgid "在新终端运行：{cmd}"
+msgstr "新しいターミナルで実行: {cmd}"
+
+#, python-brace-format
+msgid "插件包生成失败：{err}"
+msgstr "プラグインパッケージの生成に失敗: {err}"
+
+#, python-brace-format
+msgid "工作区：{proj}（{n} 会话）"
+msgstr "ワークスペース: {proj}（{n} セッション）"
+
+msgid "命令行 agent 可套 experientia-wrap 自动走上面的代理地址"
+msgstr "CLI エージェントは experientia-wrap で包むと上のプロキシを自動利用できます"
+
+#, python-brace-format
+msgid "当前 agent：{agent}"
+msgstr "現在のエージェント: {agent}"
+
+msgid "当前 agent 来自会话采集（24h 内最近写入会话的工具）；想看到它具体用的模型/API，需要把 base URL 接到 8100 代理"
+msgstr "現在のエージェントはセッション収集に基づきます（24時間以内に最も新しくセッションを書いたツール）。実際のモデル/APIを見るには base URL を 8100 プロキシに向けてください"
+
+#, python-brace-format
+msgid "正在运行：{agents}"
+msgstr "実行中: {agents}"
+
+msgid "accounting"
+msgstr "会計"
+
+msgid "architecture"
+msgstr "アーキテクチャ"
+
+msgid "bidding"
+msgstr "入札"
+
+msgid "business"
+msgstr "ビジネス"
+
+msgid "comments"
+msgstr "コメント"
+
+msgid "compliance"
+msgstr "コンプライアンス"
+
+msgid "data"
+msgstr "データ"
+
+msgid "docs"
+msgstr "ドキュメント"
+
+msgid "education"
+msgstr "教育"
+
+msgid "engineering"
+msgstr "エンジニアリング"
+
+msgid "git"
+msgstr "Git（バージョン管理）"
+
+msgid "insurance"
+msgstr "保険"
+
+msgid "legal"
+msgstr "法務"
+
+msgid "marketing"
+msgstr "マーケティング"
+
+msgid "medical"
+msgstr "医療"
+
+msgid "meeting"
+msgstr "会議"
+
+msgid "official-doc"
+msgstr "公文書"
+
+msgid "privacy"
+msgstr "プライバシー"
+
+msgid "product"
+msgstr "製品"
+
+msgid "realestate"
+msgstr "不動産"
+
+msgid "sales"
+msgstr "営業"
+
+msgid "security"
+msgstr "セキュリティ"
+
+msgid "testing"
+msgstr "テスト"
+
+msgid "writing"
+msgstr "ライティング"
+
+# ---------- 连接页：自动接入卡片 UI 词 ----------
+msgid "新增工具"
+msgstr "ツールを追加"
+
+msgid "读不到的工具专用"
+msgstr "読み取り不能なツール専用"
+
+msgid "少数 AI 工具的会话被加密或格式不通用，装个小技能就能接进来。"
+msgstr "一部の AI ツールのセッションは暗号化または非互換フォーマットで、小さなスキルをインストールすれば接続できます。"
+
+msgid "导出技能"
+msgstr "スキルを書き出す"
+
+msgid "下载技能包"
+msgstr "スキルパックをダウンロード"
+
+msgid "运行一次"
+msgstr "1回実行"
+
+msgid "工具自动上报"
+msgstr "ツールが自動報告"
+
+msgid "粘贴连接"
+msgstr "貼り付けて接続"
+
+msgid "连接码自动送达"
+msgstr "接続コードは自動で届く"
+
+msgid "导出 experientia-report 文件夹，放进工具的技能目录"
+msgstr "experientia-report フォルダーを書き出し、ツールのスキルディレクトリに配置"
+
+msgid "点「导出上报技能」导出一个 experientia-report 文件夹，放进那个 AI 工具能加载技能的位置（一般是它的 skills 或插件目录），然后让它运行一次任意任务。"
+msgstr "「レポートスキルを書き出す」をクリックすると experientia-report フォルダーが書き出されます。AI ツールがスキルを読み込める場所（通常はその skills またはプラグインディレクトリ）に置き、任意のタスクを 1 回実行させます。"
+
+msgid "为什么需要？"
+msgstr "なぜ必要？"
+
+msgid "少数 AI 工具的会话被加密或格式不通用，Experientia 直接读不到，需要工具主动上报。正常情况下连接码会自动送达、无需手动粘贴；只有下方列表一直没出现它时，才需要把工具返回的连接码粘到输入框，再点「连接」。如果你常用某个工具但上方「已接入」里一直没有它，多半就是这一类——给它装一次小技能即可。"
+msgstr "一部の AI ツールのセッションは暗号化または非互換フォーマットで、Experientia が直接読めず、ツール側の自主報告が必要です。通常は接続コードが自動で届くため手動貼り付けは不要ですが、下のリストにずっと出ない場合のみ、ツールが返した接続コードを入力欄に貼り付けて「接続」をクリックしてください。よく使うツールが上の「接続済み」に出ない場合は、おそらくこの類です——小さなスキルを 1 回インストールすれば解決します。"
+
+msgid "已连接"
+msgstr "接続済み"
+
+msgid "待授权"
+msgstr "承認待ち"
+
+msgid "兜底上报"
+msgstr "フォールバック報告"
+
+msgid "连接"
+msgstr "接続"
+
+msgid "粘贴返回的连接码"
+msgstr "返された接続コードを入力"
+
+msgid "接入状态"
+msgstr "接続状況"
+
+msgid "可自动捕获"
+msgstr "自動記録可能"
+
+msgid "已加密，可授权解密"
+msgstr "暗号化 - 復号化の許可が必要"
+
+msgid "可实时捕获"
+msgstr "リアルタイム記録が可能"
+
+msgid "经验上报兜底"
+msgstr "経験の報告のみ"
+
+msgid "已接入"
+msgstr "接続済み"
+
+msgid "未接入"
+msgstr "未接続"
+
+msgid "无需手动接入"
+msgstr "手動接続は不要です"
+
+msgid "连接失败"
+msgstr "接続に失敗しました"
+
+#, python-brace-format
+msgid "已连接 {name}"
+msgstr "{name} に接続しました"
+
+msgid "全部接入 Experientia"
+msgstr "すべて Experientia に接続"
+
+msgid "全部移除 Experientia"
+msgstr "すべてから Experientia を解除"
+
+msgid "Experientia 添加的"
+msgstr "Experientia が追加"
+
+msgid "原本就有"
+msgstr "既存"
+
+msgid "未检测到该工具的 Hook 配置"
+msgstr "このツールに Hook 設定は見つかりません"
+
+msgid "删除这条 Hook"
+msgstr "この Hook を削除"
+
+msgid "删除后不可恢复。若它是该工具原本就有的 Hook，请确认你真的要删？"
+msgstr "削除は取り消せません。このツールが元々持っていた Hook の場合は、本当に削除してよいか確認してください。"
+
+msgid "对已检测到的工具全部接入 Experientia Hook？"
+msgstr "検出されたツールすべてに Experientia の Hook を接続しますか？"
+
+msgid "移除已接入的全部 Experientia Hook？（原有 Hook 不动）"
+msgstr "接続済みの Experientia Hook をすべて解除しますか？（既存の Hook は残します）"
+
+msgid "已更新"
+msgstr "更新しました"
+
+msgid "部分失败"
+msgstr "一部失敗"
+
+# ---------- S5 草稿三入口 UI ----------
+msgid "待放行的经验上报"
+msgstr "承認待ちの経験レポート"
+
+msgid "工具收尾自动上报的经验：确认后入库，忽略即放弃"
+msgstr "ツール収束時に自動報告されます。確認で保存、無視で破棄。"
+
+msgid "去处理"
+msgstr "確認へ"
+
+msgid "放行"
+msgstr "承認"
+
+msgid "去处理（经验库）"
+msgstr "経験ライブラリで確認"
+
+#, python-brace-format
+msgid "{n} 条经验待你放行"
+msgstr "{n} 件の経験が承認待ちです"
+
+#, python-brace-format
+msgid "有 {n} 条经验上报待你确认"
+msgstr "{n} 件の経験報告が確認待ちです"
+
+msgid "处理失败"
+msgstr "失敗"
+
+msgid "导出上报技能"
+msgstr "レポートスキルを書き出す"
+
+#, python-brace-format
+msgid "已导出到 {path}。现在把它装进目标 AI 工具 → 让它运行一次 → 回来粘贴返回的连接码。"
+msgstr "{path} に書き出しました。対象の AI ツールにインストールして1回実行させ、返された接続コードを貼り付けて戻ってください。"
+
+#, python-brace-format
+msgid "选择导出目录（将生成 {dir} 文件夹）"
+msgstr "書き出し先フォルダーを選択（{dir} フォルダーが作成されます）"
+
+#, python-brace-format
+msgid "收到的钥匙（{n}）"
+msgstr "受け取った鍵（{n}）"
+
+# ---------- 存量缺口补齐（i18n 同步：接入/Hooks/设置/成长等） ----------
+msgid "+ 新增"
+msgstr "+ 追加"
+
+msgid "+ 新增规则（Hook）"
+msgstr "+ ルール追加（Hook）"
+
+msgid "AI 停下的时候"
+msgstr "AI が止まったとき"
+
+msgid "AI 回复后"
+msgstr "AI が返信した後"
+
+msgid "AI 正在分析这条规则…（本地模型可能要 1–2 分钟）"
+msgstr "AI がこのルールを分析中…（ローカルモデルなら 1–2 分かかります）"
+
+msgid "AI 每做完一步，记下这步的效果"
+msgstr "各ステップのたびに、そのステップの効果记录下来"
+
+msgid "AI 没返回内容，再试一次"
+msgstr "AI が内容を返さなかったので再試行します"
+
+msgid "AI 答完话时"
+msgstr "AI が答え終えたとき"
+
+msgid "AI 解释"
+msgstr "AI 解説"
+
+#, python-brace-format
+msgid "AI 解释失败：{msg}"
+msgstr "AI 解説に失敗：{msg}"
+
+msgid "AI 解释完成"
+msgstr "AI 解説が完了しました"
+
+#, python-brace-format
+msgid "AI 解释：{text}"
+msgstr "AI 解説：{text}"
+
+msgid "Hook 命令"
+msgstr "Hook コマンド"
+
+#, python-brace-format
+msgid "{n} 个会话"
+msgstr "セッション {n} 件"
+
+#, python-brace-format
+msgid "{n} 个工具检测不到新记录（{names}）"
+msgstr "新記録が検出できないツール {n} 件（{names}）"
+
+#, python-brace-format
+msgid "{n} 个规则同优先级冲突，点开对照后自己拍板"
+msgstr "同じ優先度のルールが {n} 件競合しています——開いて比較し、自分で判断してください"
+
+#, python-brace-format
+msgid "{n} 条提醒规则"
+msgstr "リマインダールール {n} 件"
+
+#, python-brace-format
+msgid "{n} 条规则已经 {d} 天没用上了"
+msgstr "{n} 件のルールが {d} 日間使われていません"
+
+msgid "⬥ 暂停采集：在上方「采集」区关掉它，暂停记录"
+msgstr "⬥ 採集を一時停止：上の「採集」セクションで切って記録を止める"
+
+msgid "一轮做完，自动复盘、写成经验"
+msgstr "1 ラウンド終わると自動で振り返り、経験に書き起こします"
+
+msgid "一轮结束时"
+msgstr "ラウンドが終わるとき"
+
+msgid "一键配置接入"
+msgstr "ワンクリックで接続設定"
+
+msgid "与另一条同优先级规则可能冲突，点开对照后自己拍板"
+msgstr "同じ優先度の別のルールと競合する可能性があります——開いて比較し、自分で判断してください"
+
+msgid "事件名不能为空"
+msgstr "イベント名は空にできません"
+
+msgid "事件（工具触发时机）"
+msgstr "イベント（ツールの発火タイミング）"
+
+msgid "你发消息时"
+msgstr "メッセージを送るとき"
+
+msgid "例如 echo done，或任意 shell 命令；写入后需重启 Hermes gateway 生效"
+msgstr "例：echo done、または任意の shell コマンド。書き込み後は Hermes gateway の再起動で有効になります"
+
+msgid "全部接入"
+msgstr "すべて接続"
+
+msgid "全部移除 Experientia 添加的"
+msgstr "Experientia が追加したものをすべて除去"
+
+#, python-brace-format
+msgid "删除 {n} 条规则？"
+msgstr "ルール {n} 件を削除しますか？"
+
+msgid "删除这把钥匙的历史记录？已接入的工具不受影响。"
+msgstr "このキーの履歴を削除しますか？接続済みのツールには影響しません。"
+
+msgid "删除这条规则？"
+msgstr "このルールを削除しますか？"
+
+msgid "去 Hooks 页管理"
+msgstr "Hooks ページで管理"
+
+msgid "去暂停"
+msgstr "一時停止へ"
+
+msgid "去模板库"
+msgstr "テンプレートライブラリへ"
+
+msgid "去管理"
+msgstr "管理する"
+
+#, python-brace-format
+msgid "发现 {n} 个 AI 工具可一键接入实时捕获：{names}"
+msgstr "リアルタイム捕捉にワンクリック接続できる AI ツール {n} 件を発見：{names}"
+
+#, python-brace-format
+msgid "发现 {n} 个工具可以接入：{names}"
+msgstr "接続できるツール {n} 件を発見：{names}"
+
+msgid "只可查看"
+msgstr "閲覧のみ"
+
+msgid "只改它执行什么；什么时候触发由「事件」决定，这里改不了"
+msgstr "実行内容だけを変更します。いつ発火するかは「イベント」で決まり、ここでは変えられません"
+
+msgid "可在「我的 Hooks」页一键接入实时捕获"
+msgstr "「マイ Hooks」ページでリアルタイム捕捉をワンクリック接続できます"
+
+msgid "命令不能为空"
+msgstr "コマンドは空にできません"
+
+msgid "命令（触发时执行的 shell 命令）"
+msgstr "コマンド（発火時に実行する shell コマンド）"
+
+msgid "命令（触发时执行；Hermes 目录型会包成 gateway handler）"
+msgstr "コマンド（発火時に実行。Hermes ディレクトリ型は gateway handler にラップされます）"
+
+msgid "多少天没用上就提醒（默认 30）"
+msgstr "何日間未使用でリマインドするか（既定 30）"
+
+msgid "天"
+msgstr "日間"
+
+#, python-brace-format
+msgid "将把现有数据整体搬到 {path}（原位置重启后只留一个指针文件）。确定继续？"
+msgstr "既存データをすべて {path} へ移動します（元場所は再起動後にポインターファイルのみ残ります）。続行しますか？"
+
+msgid "工具的 Hook"
+msgstr "ツールの Hook"
+
+msgid "工具触发事件时跑的命令，含它们原本就有的和 Experientia 添加的；可逐条开关、编辑、删除、AI 解释，也能新增一条。"
+msgstr "ツールが発火時に実行するコマンド。元からあるものも Experientia が追加したものも含まれ、1 件ずつ切替・編集・削除・AI 解説でき、新規追加もできます。"
+
+msgid "工具触发这些事件时，会自动捕获进你的经验库。规则是你额外加上的：告诉 AI 该怎么做、绝不能怎么做。"
+msgstr "ツールがこれらのイベントを発火すると、自動的に経験ライブラリへ捕捉されます。ルールはあなたが追加するもの：AI に何をすべきか、決してすべきでないかを伝えるものです。"
+
+#, python-brace-format
+msgid "已保存：超过 {n} 天没用上的规则会提醒你"
+msgstr "保存しました：{n} 日を超えて未使用のルールはリマインドされます"
+
+msgid "已加密，走代理"
+msgstr "暗号化済み——プロキシ経由"
+
+#, python-brace-format
+msgid "已接入 {n} 个"
+msgstr "{n} 件接続済み"
+
+#, python-brace-format
+msgid "已接入 {n} 个工具"
+msgstr "ツール {n} 件接続済み"
+
+msgid "已接入实时捕获"
+msgstr "リアルタイム捕捉接続済み"
+
+msgid "已接入的 AI 工具"
+msgstr "接続済みの AI ツール"
+
+msgid "已新增"
+msgstr "追加済み"
+
+msgid "已新增，需重启 Hermes gateway 生效"
+msgstr "追加済み——Hermes gateway の再起動で有効になります"
+
+msgid "已暂停"
+msgstr "一時停止中"
+
+#, python-brace-format
+msgid "已更换数据目录到 {path}，重启后生效"
+msgstr "データディレクトリを {path} に変更しました——再起動で有効になります"
+
+#, python-brace-format
+msgid "已生效：{events} → {path}（{ago}收到 hook 事件）"
+msgstr "有効：{events} → {path}（{ago}に hook イベントを受信）"
+
+#, python-brace-format
+msgid "已经 {d} 天没用上，可以关掉或删掉"
+msgstr "{d} 日間未使用——切ってよいし削除してもよい"
+
+#, python-brace-format
+msgid "已选 {n} 条"
+msgstr "{n} 件選択中"
+
+msgid "开始记录这次任务"
+msgstr "このタスクの記録を開始"
+
+msgid "开新对话时"
+msgstr "新しい会話を始めたとき"
+
+msgid "未连接"
+msgstr "未接続"
+
+#, python-brace-format
+msgid "待处理 {n}"
+msgstr "処理待ち {n} 件"
+
+msgid "待积累"
+msgstr "蓄積待ち"
+
+msgid "恢复记录"
+msgstr "記録を再開"
+
+msgid "我的规则"
+msgstr "マイルール"
+
+msgid "把你在用的 AI 工具接进来，Experientia 就能记录它们的经验、下次自动带上。大多数工具不用你做任何事；只有标了黄色的，才需要点一下。"
+msgstr "使っている AI ツールを接続すると、Experientia はその経験を記録し、次回自動で持参します。ほとんどのツールは操作不要。黄色マークが付いたものだけ 1 回クリックしてください。"
+
+msgid "把用得上的经验自动提给 AI 参考"
+msgstr "役に立つ経験を AI に自動的に参考として提示"
+
+msgid "挑一套精选模板，按你的偏好导入成规则"
+msgstr "厳選テンプレートを 1 套選び、好みに合わせてルールとして取り込む"
+
+msgid "接入失败"
+msgstr "接続に失敗"
+
+msgid "接入实时捕获"
+msgstr "リアルタイム捕捉に接続"
+
+msgid "接入开关在「接入」页"
+msgstr "接続スイッチは「接続」ページにあります"
+
+msgid "接入方案"
+msgstr "接続プラン"
+
+msgid "提醒设置"
+msgstr "リマインダー設定"
+
+msgid "数据目录指针失效（目标目录不存在），已回退默认位置"
+msgstr "データディレクトリのポインターが無効（対象ディレクトリが存在しない）——既定位置へ復帰しました"
+
+msgid "新增 Hook 条目"
+msgstr "Hook エントリ追加"
+
+msgid "新增规则"
+msgstr "ルール追加"
+
+#, python-brace-format
+msgid "暂停后 {name} 的经验将不再记录"
+msgstr "一時停止後、{name} の経験は記録されなくなります"
+
+msgid "暂停记录"
+msgstr "記録を一時停止"
+
+msgid "更多操作"
+msgstr "その他の操作"
+
+msgid "更换数据目录"
+msgstr "データディレクトリを変更"
+
+#, python-brace-format
+msgid "更换数据目录失败：{err}"
+msgstr "データディレクトリの変更に失敗：{err}"
+
+msgid "更换目录"
+msgstr "ディレクトリを変更"
+
+msgid "最近命中"
+msgstr "最近のヒット"
+
+msgid "条"
+msgstr "件"
+
+msgid "查看命令"
+msgstr "コマンドを見る"
+
+msgid "查看详情"
+msgstr "詳細を見る"
+
+msgid "检测不到记录"
+msgstr "記録が検出できない"
+
+#, python-brace-format
+msgid "检测不到记录的工具（{n} 个）"
+msgstr "記録が検出できないツール（{n} 件）"
+
+msgid "检测到在跑，未发现 Hook 配置"
+msgstr "稼働を検出、Hook 設定は見つからず"
+
+msgid "模板库"
+msgstr "テンプレートライブラリ"
+
+msgid "正在分析…"
+msgstr "分析中…"
+
+msgid "正在迁移数据…"
+msgstr "データを移行中…"
+
+msgid "此工具的命令只能看，改不了"
+msgstr "このツールのコマンドは閲覧のみで、変更できません"
+
+msgid "生成本阶段海报"
+msgstr "このフェーズのポスターを生成"
+
+#, python-brace-format
+msgid "用过 {n} 次 · 最近 {at}"
+msgstr "{n} 回使用 · 最近 {at}"
+
+msgid "立即重启"
+msgstr "今すぐ再起動"
+
+#, python-brace-format
+msgid "累计 {c} 次 · 最近 {at}"
+msgstr "計 {c} 回 · 最近 {at}"
+
+msgid "给这个工具加一条自定义提醒规则"
+msgstr "このツールにカスタムリマインダールールを 1 件追加"
+
+msgid "编辑 Hook 命令"
+msgstr "Hook コマンドを編集"
+
+msgid "编辑规则"
+msgstr "ルールを編集"
+
+msgid "装了钩子的工具，即使不改地址、不走代理，经验也会自动带上"
+msgstr "フックを装着したツールは、アドレスを変えなくてもプロキシを通さなくても、経験は自動で持参されます"
+
+msgid "要跑一条命令前"
+msgstr "コマンドを実行する前に"
+
+msgid "规则从第一天就能用（不用等经验积累）——从下面的模板库挑一套，或点上方「+ 新增规则」自己写一条。"
+msgstr "ルールは初日から使えます（経験の蓄積を待つ必要はありません）——下のテンプレートライブラリから 1 套を選び、または上の「+ ルール追加」をクリックして自分で 1 件書きます。"
+
+msgid "规则名（如 公文格式）"
+msgstr "ルール名（例：公文書フォーマット）"
+
+msgid "规则太多会互相稀释，建议把不常用的改成按需触发"
+msgstr "ルールが多すぎるとお互いの効力が薄れます——使わないものはオンデマンド発火に変更することを推奨"
+
+msgid "记下这轮对话"
+msgstr "この会話ラウンドを記録"
+
+msgid "详情"
+msgstr "詳細"
+
+#, python-brace-format
+msgid "详情：{name}"
+msgstr "詳細：{name}"
+
+msgid "请先勾选要删除的规则"
+msgstr "削除するルールにまずチェックを入れてください"
+
+msgid "跑完一条命令后"
+msgstr "コマンドの実行後"
+
+#, python-brace-format
+msgid "近 7 天命中 {n} 次"
+msgstr "過去 7 日間に {n} 回ヒット"
+
+msgid "还没发现你在用的 AI 工具。随便挑一个工具跑个任务，这里就会自动出现它。"
+msgstr "まだ使用中の AI ツールが検出されていません。どのツールでも 1 つタスクを実行すると、ここに自動で表示されます。"
+
+msgid "还没有在记录的 AI 工具。这台机器上只要有个工具开始干活，这里就会出现。"
+msgstr "まだ記録中の AI ツールはありません。このマシンでどのツールでも動き始めたら、ここに現れます。"
+
+msgid "还没有规则"
+msgstr "まだルールがありません"
+
+msgid "还没用过"
+msgstr "まだ使われていません"
+
+msgid "这些工具最近读不到新记录了，多半是它们升级后换了存记录的方式。先点「去暂停」让它们别记了（不影响别的工具）；通常等下个版本更新会自动恢复，点「查看详情」可看每个工具的具体情况。"
+msgstr "これらのツールは最近、新記録が読めていません——おそらくアップグレード後に記録の保存方法が変わったのでしょう。先に「一時停止へ」をクリックして記録を止めましょう（他のツールには影響しません）。通常、次のバージョン更新で自動的に復旧します。「詳細を見る」で各ツールの状況を個別に確認できます。"
+
+#, python-brace-format
+msgid "连续 {n} 轮没能读到它的新记录——它保存记录的格式可能变了"
+msgstr "連続 {n} ラウンド、新記録が読めていません——記録を保存するフォーマットが変わった可能性があります"
+
+msgid "选择新的数据目录"
+msgstr "新しいデータディレクトリを選択"
+
+msgid "部分工具接入失败"
+msgstr "一部のツールの接続に失敗"
+
+#, python-brace-format
+msgid "采集 {n}/{m}"
+msgstr "採集中 {n}/{m}"
+
+#, python-brace-format
+msgid "重启失败：{err}"
+msgstr "再起動に失敗：{err}"
+
+msgid "需要你处理"
+msgstr "あなたの手続きが必要"
+
+msgid "高级设置"
+msgstr "高度な設定"
+
+msgid "例如 curl -s --max-time 15 -X POST http://127.0.0.1:8101/api/hooks/... --data-binary @-"
+msgstr "例：curl -s --max-time 15 -X POST http://127.0.0.1:8101/api/hooks/... --data-binary @-"
+
+msgid ""
+"同一条规则连续这么多天一次都没用上，就提醒你考虑关掉或改触发方式。\n"
+"为什么建议关掉：规则要精简——每开一个新对话，AI 都要先把这些规则读一遍，条数越多，启动越慢、注意力被分走越多"
+msgstr ""
+"同じルールがこんなに連続して一度も使われなかったら、切ってよいか、トリガーの仕方を変えるかを検討するようリマインドします。\n"
+"切ることを勧める理由：ルールはシンプルでなければなりません——新しい会話のたびに、AI はまずこれらのルールを全部読んでから始まります。条数が増えるほど、起動が遅くなり、注意力が分散します。"
+
+#, python-brace-format
+msgid ""
+"对以下工具一键接入实时捕获？\n"
+"{names}"
+msgstr ""
+"以下のツールをリアルタイム捕捉にワンクリック接続しますか？\n"
+"{names}"
+
+msgid "除了把地址指过去（见上方总况条），Claude Code 还能装一个实时钩子：装上后，它每次开始任务、收到你的消息时都会主动把经验交给 Experientia，比只改地址更及时。点下方按钮一键装好。"
+msgstr "アドレスをプロキシに向けること（上の概要バー参照）に加えて、Claude Code にはリアルタイムフックを装着できます：装着すると、タスクを開始したりメッセージを受け取ったりするたびに、経験をExperientia に積極的に渡し、アドレスの変更だけよりタイムリーです。下のボタンで 1 クリック設定します。"
+
+msgid "休整：这天没有记录到同类任务"
+msgstr "休整：この日に同種のタスク記録なし"
+
+#, python-brace-format
+msgid "你在『{name}』上比最初几次平均少 {n} 轮修正（基线后 5 次）"
+msgstr "『{name}』では最初の数回より平均 {n} 回少ない修正で済む（ベースライン後の 5 回）"
+
+#, python-brace-format
+msgid "出现 {n} 次"
+msgstr "{n} 回発生"
+
+#, python-brace-format
+msgid "出现 {n} 次 · 观察过期"
+msgstr "{n} 回発生 · 観察期限切れ"
+
+#, python-brace-format
+msgid "出现了 {n} 次，等下次同类任务确认它还会不会踩"
+msgstr "{n} 回発生しました。次の同種タスクでまた踏むか確認中"
+
+msgid "后台整理（自动）"
+msgstr "背景整理（自動）"
+
+#, python-brace-format
+msgid "归档 {n} 条"
+msgstr "{n} 件をアーカイブ"
+
+msgid "无变化"
+msgstr "変化なし"
+
+msgid "暂无明显变化"
+msgstr "まだ明らかな変化なし"
+
+#, python-brace-format
+msgid "最近一次：{d}"
+msgstr "直前：{d}"
+
+#, python-brace-format
+msgid "清理 {n} 条"
+msgstr "{n} 件を整理"
+
+#, python-brace-format
+msgid "观察过期 {n} 条"
+msgstr "観察期限切れ {n} 件"
+
+msgid "记住了 = 每次自动带上；待验证 = 等下次同类任务确认；留意中 = 只记录，不自动附带"
+msgstr "覚えている = 毎回自動で付与；要検証 = 次の同種タスクで確認中；見守り中 = 記録のみで付与しない"
+
+#, python-brace-format
+msgid "降权 {n} 条"
+msgstr "{n} 件を降格"
+
+#, python-brace-format
+msgid "存储自检：会话 {a}MB · 经验 {b}MB · 通知 {c}MB（最大单行 {d}KB）"
+msgstr "ストレージ自己点検：セッション {a}MB · 経験 {b}MB · 通知 {c}MB（最大単一ライン {d}KB）"
+
+#, python-brace-format
+msgid "{n} 条无时间戳（黄标）"
+msgstr "タイムスタンプなし {n} 件（イエローフラグ）"
+
+#, python-brace-format
+msgid "超容量 {n} 条"
+msgstr "容量超過 {n} 件"
+
+msgid "点击展开全文"
+msgstr "クリックで全文を展開"
+
+msgid "点击收起"
+msgstr "クリックで折りたたむ"
+
+msgid "接入模型（本地模型或 API）后，原始记录会自动总结成一句结论，卡片更清爽"
+msgstr "モデル（ローカルモデルまたは API）を接続すると、生の記録は一句の結論に自動まとめられ、カードがすっきりします"
+
+msgid "不采纳"
+msgstr "採用しない"
+
+msgid "已移出"
+msgstr "移動しました"
+
+msgid "已纠正，内容已更新"
+msgstr "訂正しました — 内容を更新しました"
+
+msgid "归类为…"
+msgstr "分類する…"
+
+msgid "撤销"
+msgstr "元に戻す"
+
+msgid "改成对的内容，保存后就是这条经验的正式内容"
+msgstr "正しい内容に直してください。保存すると、この経験の正式な内容になります"
+
+msgid "新建分类"
+msgstr "新しい分類"
+
+msgid "新建分类…"
+msgstr "新しい分類…"
+
+msgid "没有改动"
+msgstr "変更はありません"
+
+#, python-brace-format
+msgid "第 {n} 个做法"
+msgstr "やり方 {n}"
+
+msgid "纠正经验"
+msgstr "経験を訂正"
+
+msgid "输入分类名"
+msgstr "分類名を入力"
+
+#, python-brace-format
+msgid "这次任务有 {n} 个做法，逐条改，保存时一起写回"
+msgstr "このタスクには {n} つのやり方があります。1 つずつ直し、保存時にまとめて書き戻します"
+
+msgid "学习历程"
+msgstr "学習の経緯"
+
+#, python-brace-format
+msgid "共 {n} 个节点 · 删除=归档，30 天可恢复"
+msgstr "全 {n} ノード · 削除=アーカイブ、30 日以内に復元可能"
+
+#, python-brace-format
+msgid "{n} 个节点"
+msgstr "{n} ノード"
+
+msgid "无日期"
+msgstr "日付なし"
+
+msgid "新经验"
+msgstr "新経験"
+
+msgid "偏好归纳"
+msgstr "選好の帰納"
+
+msgid "成就"
+msgstr "実績"
+
+msgid "记录"
+msgstr "記録"
+
+#, python-brace-format
+msgid "展开全部 {n} 个节点"
+msgstr "全 {n} ノードを展開"
+
+msgid "收起"
+msgstr "閉じる"
+
+#, python-brace-format
+msgid "×{n}"
+msgstr "×{n}"
+
+#, python-brace-format
+msgid "从 {agent} 的一次会话学到 {n} 条新经验"
+msgstr "{agent} の 1 セッションから {n} 件の新経験を学習"
+
+#, python-brace-format
+msgid "从 {agent} 的会话学到 {n} 条新经验（复盘 {times} 次）"
+msgstr "{agent} のセッションから {n} 件の新経験を学習（振り返り {times} 回）"
+
+msgid "源复盘"
+msgstr "ソース振り返り"
+
+#, python-brace-format
+msgid "已固化 v{ver}"
+msgstr "v{ver} に確定済み"
+
+#, python-brace-format
+msgid "含 {n} 条源复盘"
+msgstr "ソース振り返り {n} 件を含む"
+
+#, python-brace-format
+msgid "从 {k} 次会话共学到 {n} 条新经验"
+msgstr "{k} セッション合計で {n} 件の新経験を学習"
+
+#, python-brace-format
+msgid "{agent} 自报 {n} 条经验，已自动入库"
+msgstr "{agent} が {n} 件を自主報告、自動登録済み"
+
+#, python-brace-format
+msgid "方法「{path}」升级到 v{ver}"
+msgstr "方法「{path}」を v{ver} にアップグレード"
+
+#, python-brace-format
+msgid "由 {n} 条经验蒸馏 · {src}"
+msgstr "{n} 件の経験から蒸留 · {src}"
+
+msgid "会话复盘"
+msgstr "セッション振り返り"
+
+msgid "数量达标"
+msgstr "件数閾値到達"
+
+#, python-brace-format
+msgid "淘汰：{text}"
+msgstr "廃止：{text}"
+
+#, python-brace-format
+msgid "方法「{path}」更新纠正补丁（v{ver}）"
+msgstr "方法「{path}」の訂正パッチを更新（v{ver}）"
+
+#, python-brace-format
+msgid "来自 {n} 条纠正记录"
+msgstr "{n} 件の修正記録から"
+
+msgid "你否决了 1 条失败模式"
+msgstr "失敗パターン 1 件を却下しました"
+
+#, python-brace-format
+msgid "方法改名为「{name}」"
+msgstr "方法を「{name}」に名前変更"
+
+msgid "方法类别调整"
+msgstr "方法カテゴリを調整"
+
+#, python-brace-format
+msgid "偏好画像「{trunk}」自动归纳 {n} 条新偏好"
+msgstr "選好プロファイル「{trunk}」に {n} 件の新選好を自動帰納"
+
+#, python-brace-format
+msgid "偏好画像「{trunk}」重新归纳"
+msgstr "選好プロファイル「{trunk}」を再帰納"
+
+#, python-brace-format
+msgid "{kept} 条确认保留 · {new} 条新归纳"
+msgstr "確認済み {kept} 件を保持 · 新規帰納 {new} 件"
+
+#, python-brace-format
+msgid "偏好画像「{trunk}」自动整理"
+msgstr "選好プロファイル「{trunk}」を自動整理"
+
+#, python-brace-format
+msgid "{before} 条 → {after} 条"
+msgstr "{before} 件 → {after} 件"
+
+#, python-brace-format
+msgid "你编辑了偏好画像「{trunk}」"
+msgstr "選好プロファイル「{trunk}」を編集しました"
+
+#, python-brace-format
+msgid "解锁 {n} 个成就"
+msgstr "{n} 個の実績を解除"
+
+msgid "文件通道"
+msgstr "ファイル経路"
+
+msgid "今天"
+msgstr "今日"
+
+msgid "生成技能文件，可被 Claude Code / Codex 直接加载"
+msgstr "Claude Code / Codex で直接読み込めるスキルファイルを生成します"
+
+msgid "导出会按主题分类打包：经验按领域打包，规则按模板类目打包"
+msgstr "テーマごとにまとめてエクスポート：経験は分野ごと、ルールはテンプレートのカテゴリごと"
+
+#, python-brace-format
+msgid "加载更多（还有 {n} 条）"
+msgstr "さらに読み込む（残り {n} 件）"
+
+#, python-brace-format
+msgid "已选 {n} 条，范围内 {m} 条（跨 {c} 个类别）"
+msgstr "{n} 件選択中、現在の範囲内 {m} 件（{c} カテゴリ）"
+
+msgid "还没选经验——先在列表里勾几条，或切到「全部」"
+msgstr "まだ選択されていません — リストで選択するか「すべて」に切り替えてください"
+
+msgid "确认导出"
+msgstr "エクスポートを確認"
+
+#, python-brace-format
+msgid "将打包 {n} 条经验（跨 {c} 个类别）"
+msgstr "{n} 件の経験をパッケージ化（{c} カテゴリ）"
+
+#, python-brace-format
+msgid "类别：{name}"
+msgstr "カテゴリ：{name}"
+
+#, python-brace-format
+msgid "Skill 名：{name}"
+msgstr "スキル名：{name}"
+
+#, python-brace-format
+msgid "描述：{desc}"
+msgstr "説明：{desc}"
+
+#, python-brace-format
+msgid "另有 {n} 条已选不在当前范围，不会打包——切到「全部」可一起导出"
+msgstr "他に選択中の {n} 件は現在の範囲外のためパッケージされません — 「すべて」に切り替えると含まれます"
+
+#, python-brace-format
+msgid "{n} 把钥匙"
+msgstr "{n} 個のキー"
+
+#, python-brace-format
+msgid "展开全部（{n} 把）"
+msgstr "すべて表示（{n} 個）"
+
+msgid "仅官方接入"
+msgstr "公式のみ"
+
+msgid "回炉治理"
+msgstr "再精錬の管理"
+
+msgid "被系统判断反复用错的经验，已降权或停用；证真后自动回归，也可在这里手动恢复"
+msgstr "何度も使い方を誤ったと判断された経験は優先度を下げるか停止します。有効と証明されれば自動復帰し、ここで手動復帰もできます"
+
+msgid "当前没有需要回炉的经验"
+msgstr "再精錬対象の経験はありません"
+
+msgid "当某条经验被反复用错，会自动出现在这里，供你查看或恢复"
+msgstr "経験が繰り返し誤用されると、ここに表示され確認・復帰できます"
+
+msgid "回炉受限"
+msgstr "使用を制限中"
+
+msgid "使用权重降半，预算紧张时先被截掉"
+msgstr "使用の優先度を半減。予算が逼迫すると最初に削られます"
+
+msgid "不再自动使用，经验仍保留"
+msgstr "自動使用は停止しますが、経験は保持されます"
+
+#, python-brace-format
+msgid "佐证 {corr} · 反驳 {ref}"
+msgstr "有効 {corr} · 反証 {ref}"
+
+msgid "恢复使用"
+msgstr "使用を復元"
+
+msgid "正在恢复…"
+msgstr "復元中…"
+
+msgid "已恢复到正常使用"
+msgstr "通常使用に復元しました"
+
+msgid "未找到该条目，可能已恢复"
+msgstr "項目が見つかりません（復元済みの可能性）"
+
+msgid "回炉"
+msgstr "再精錬"
+
+msgid "被系统反复判定用错而降权/停用的经验，可查看并恢复"
+msgstr "誤用と判定され優先度低下・停止された経験。ここで確認・復元できます"
+
+#, python-brace-format
+msgid "恢复失败：{err}"
+msgstr "復元に失敗：{err}"
+
+msgid "二次确认"
+msgstr "再確認"
+
+msgid "请输入 WIPE 以确认彻底删除全部数据："
+msgstr "WIPE と入力して、すべてのデータの完全削除を確認してください："
+
+msgid "标题"
+msgstr "タイトル"
+
+msgid "检测中…"
+msgstr "検出中…"
+
+msgid "最近通知"
+msgstr "最近の通知"
+
+#, python-brace-format
+msgid "来源 agent 加载失败：{err}"
+msgstr "ソース agent の読み込みに失敗：{err}"
+
+msgid "通知设置保存失败"
+msgstr "通知設定の保存に失敗しました"
+
+msgid "正在接入实时捕获…"
+msgstr "リアルタイムキャプチャを設定中…"
+
+msgid "正在处理…"
+msgstr "処理中…"
+
+msgid "请填写名称"
+msgstr "名前を入力してください"
+
+msgid "请填写模型名"
+msgstr "モデル名を入力してください"
+
+msgid "点击前往相关页面"
+msgstr "クリックして関連ページへ移動"
+
+# ---------- AI 重写（第二项蒸馏：提案→预览→采纳） ----------
+msgid "让 AI 重写"
+msgstr "AIに書き直させる"
+
+msgid "正在让 AI 重写…"
+msgstr "AIが書き直しています…"
+
+msgid "AI 没有给出可用的重写"
+msgstr "AIは利用できる書き直しを返せませんでした"
+
+msgid "已保留当前内容"
+msgstr "現在の内容を保持しました"
+
+msgid "已采纳，内容已更新"
+msgstr "採用し、内容を更新しました"
+
+#, python-brace-format
+msgid "AI 重写失败：{err}"
+msgstr "AI の書き直しに失敗：{err}"
+
+msgid "不用了"
+msgstr "使わない"
+
+msgid "重写一遍"
+msgstr "もう一度書き直す"
+
+msgid "采纳 AI 结果"
+msgstr "AI の結果を採用"
+
+msgid "AI 重写预览"
+msgstr "AI書き直しのプレビュー"
+
+msgid "AI 基于原始记录重写了总结，采纳前不会改动任何内容"
+msgstr "AIが元の記録に基づいて要約を書き直しました。採用するまで何も変更されません"
+
+msgid "当前值"
+msgstr "現在の値"
+
+msgid "AI 建议"
+msgstr "AIの提案"
+
+msgid "AI 认为现在的总结已经够好"
+msgstr "AIは現在の要約で十分良いと判断しました"
+
+msgid "改写保持原意和关键名词，出现次数照常统计"
+msgstr "書き直しは原意と重要名詞を保持し、出現回数は今まで通り統計されます"
+
+msgid "AI 基于该类别全部经验重新总结。采纳前方法保持原样；采纳后旧版留快照，可回退"
+msgstr "AIがこのカテゴリの全経験に基づいて方法を再総括しました。採用するまで方法は元のまま、採用後も旧版はスナップショットとして残り復元できます"
+
+msgid "需要接入模型"
+msgstr "モデルの接続が必要です"
+
+msgid "用 AI 把这份方法重新总结一遍"
+msgstr "AIにこの方法全体をもう一度要約させる"
+
+msgid "第一次接模型？两种接法二选一，点「添加模型」开始："
+msgstr "モデルを初めて接続する方へ：方法は2つです。どちらかを選んで「モデルを追加」を押してください："
+
+msgid "① 有 DeepSeek、OpenAI、通义、Kimi 等家的 API Key：类型选「云端 API」，把 Key 粘进去就能用"
+msgstr "① DeepSeek、OpenAI、Qwen、Kimi などの API Key をお持ちの方：タイプで「クラウド API」を選び、Key を貼り付ければすぐ使えます"
+
+msgid "② 电脑上装了 Ollama、LM Studio：类型选「本地模型」，免费、不用联网"
+msgstr "② PC に Ollama や LM Studio を導入済みの方：タイプで「ローカルモデル」を選択 — 無料、オフラインでも使えます"
+
+msgid "电脑上装了 Ollama、LM Studio？选这个，免费、不用联网"
+msgstr "Ollama や LM Studio をお使いですか？これを選択 — 無料、オフラインで動作"
+
+msgid "有 Anthropic（Claude）的 API Key？选这个"
+msgstr "Anthropic（Claude）の API Key をお持ちですか？これを選択"
+
+msgid "有 DeepSeek、OpenAI、通义、Kimi 等家的 API Key？选这个，粘贴进来就能用"
+msgstr "DeepSeek、OpenAI、Qwen、Kimi などの API Key をお持ちですか？これを選んで貼り付ければすぐ使えます"
+
+msgid "接口地址（URL）"
+msgstr "接続先アドレス（URL）"
+
+msgid "接口地址需以 http:// 或 https:// 开头"
+msgstr "アドレスは http:// または https:// で始めてください"
+
+msgid "这个功能让 AI 重写已经总结好的内容，需要先接一个模型（本地模型或 API 都行）。现在去「接入」页配置吗？"
+msgstr "この機能はAIがすでに要約した内容を書き直すため、モデル（ローカルモデルまたはAPI）の接続が必要です。今から「接続」ページで設定しますか？"
+
+msgid "AI 干过·场"
+msgstr "AIセッション・回"
+
+msgid "协作轮次·轮"
+msgstr "協作ターン・数"
+
+msgid "记下的坑·个"
+msgstr "記録した落とし穴・件"
+
+msgid "怎么用"
+msgstr "使い方"
+
+msgid "刚发现的坑"
+msgstr "見つけたばかりの落とし穴"
+
+msgid "从你的 AI 工作记录里直接看出来的，不接模型也在记"
+msgstr "AI の作業記録からそのまま拾ったもの——モデル未接続でも記録しています"
+
+msgid "接上 AI 后解锁"
+msgstr "AI を接続すると解放"
+
+msgid "把踩过的坑自动整理成方法 · 让 AI 重写总结 · 深度复盘每次协作"
+msgstr "踏んだ落とし穴を自動で方法に整理 · AI が要約を書き直し · 毎回のコラボを深く振り返り"
+
+msgid "去接一个"
+msgstr "接続する"
+
+#, python-brace-format
+msgid "已攒下 {n} 条待提炼片段，接上模型自动整理"
+msgstr "未抽出の断片が {n} 件たまっています——モデルを接続すると自動で整理されます"
+
+msgid "接上后开始积累待提炼片段"
+msgstr "接続後、未抽出の断片がたまり始めます"
+
+msgid "命令连败后修好"
+msgstr "コマンド連続失敗後に修正"
+
+msgid "反复出现的报错"
+msgstr "繰り返し出るエラー"
+
+msgid "改动被推翻"
+msgstr "変更が取り消された"
+
+msgid "路径落空转好"
+msgstr "パス不一致をスキャンで回収"
+
+msgid "坑"
+msgstr "落とし穴"
+
+#, python-brace-format
+msgid "复现 {n} 次"
+msgstr "{n} 回再現"
+
+msgid "查看会话"
+msgstr "セッションを見る"
+
+#, python-brace-format
+msgid "读取会话失败：{err}"
+msgstr "セッションの読み込みに失敗：{err}"
+
+msgid "未提炼片段"
+msgstr "未抽出の断片"
+
+msgid "这些是 AI 被你说「不对」时的原文片段——只是现场证据，不是经验，永远不会被带进 AI 的工作里；接上模型后会自动整理成经验"
+msgstr "これは AI に「違う」と言った瞬間の原文片段です——証拠であって経験ではなく、AI の作業に使われることは絶対にありません。モデルを接続すると自動で経験に整理されます。"
+
+msgid "去让任意 agent 干个活——反复失败又修好、报错再三出现，都会自动变成坑卡落在这里"
+msgstr "agent に手を動かさせましょう——繰り返して失敗し直ったもの、再三出るエラーは自動で落とし穴カードになります。"
+
+#, python-brace-format
+msgid "……还有 {n} 条，接上模型后会自动整理"
+msgstr "……さらに {n} 件、モデル接続後に自動で整理"
+
+msgid "从操作记录里直接看出来的坑（自动总结成方法后会更精炼）"
+msgstr "操作記録からそのまま読み取った落とし穴（自動で方法にまとめるとさらに洗練されます）"
+
+msgid "让 agent 干点活——反复失败、报错再三出现，都会自动记在这里"
+msgstr "agent に手を動かさせれば——繰り返し失敗や再三のエラーは自動でここに記録されます"
+
+msgid "总结成方法：建议先接上 AI"
+msgstr "方法にまとめる：先に AI の接続を推奨"
+
+msgid ""
+"不接模型也能用「快速整理（本机完成）」：把记录里看出来的坑（反复报错、改好才通过、改动被推翻）直接列成方法卡。\n"
+"但把经验归纳成做法、把话理顺，需要 AI——接一个本地模型或 API 都行，接好后同样的按钮就是「AI 深度整理」。\n"
+"建议先去「接入」页接模型；仍想现在就快速整理，点「确认」。"
+msgstr ""
+"モデル未接続でも「クイック整理（ローカル完結）」が使えます：記録から見える落とし穴（繰り返しエラー・再試行後に通った・変更が取り消された）を方法カードに並べます。\n"
+"ただし経験をやり方に汎化し言葉を整えるのは AI の領分です——ローカルモデルか API を接続すると、同じボタンが「AI 深度整理」になります。\n"
+"まずは「接続」ページでのモデル接続を推奨；今すぐクイック整理するなら「確認」を押してください。"
+
+msgid "还没接入模型：去「接入」页接一个，AI 就能帮你把规则翻译成大白话"
+msgstr "モデル未接続です：「接続」ページで一つ繋ぐと、AI がルールをやさしい言葉に翻訳します"
+
+msgid "操作时间线"
+msgstr "操作タイムライン"
+
+msgid "这个会话没有留下可展示的现场记录"
+msgstr "このセッションには表示できる現場記録が残っていません"
+
+msgid "搜历史会话：报错、命令、项目…"
+msgstr "過去のセッションを検索：エラー・コマンド・プロジェクト…"
+
+msgid "搜索结果"
+msgstr "検索結果"
+
+msgid "正在搜索…"
+msgstr "検索中…"
+
+#, python-brace-format
+msgid "搜索失败：{err}"
+msgstr "検索に失敗：{err}"
+
+#, python-brace-format
+msgid "搜索结果：{q}"
+msgstr "検索結果：{q}"
+
+msgid "打开"
+msgstr "開く"
+
+#, python-brace-format
+msgid "没有找到「{q}」——换个词试试，报错原文里的词最准"
+msgstr "「{q}」は見つかりませんでした——別の語を試してください。エラー原文の語が最も当たりやすいです"
+
+# ---------- Value Gate (经验价值闸门 · agent_friction 建议口吻) ----------
+msgid "助手能自动帮你避的坑"
+msgstr "アシスタントが自動で避ける落とし穴"
+
+msgid "这些是工具自己操作不顺导致的，交给我改进，不用你操心"
+msgstr "これらはツール自身の操作ミスのためです。改善は私に任せてください。"
+
+#, python-brace-format
+msgid "我发现自己常在「{sig}」上反复栽跟头（共 {n} 次），建议{advice}。"
+msgstr "「{sig}」で繰り返し失敗しています（{n}回）。提案：{advice}。"
+
+msgid "编辑前先读文件再改"
+msgstr "編集前にファイルを読む"
+
+msgid "改动前重新读取最新内容"
+msgstr "変更前に最新内容を再読み込みする"
+
+msgid "替换前先核对原文是否已变"
+msgstr "置換前に原文が変わっていないか確認"
+
+msgid "提交前先确认确有改动"
+msgstr "変更が実際にあるか確認"
+
+msgid "多处匹配时明确替换范围"
+msgstr "複数一致時は置換範囲を明示"
+
+msgid "改用合规的命令写法"
+msgstr "許可されたコマンド形式を使う"
+
+msgid "调用前检查参数类型"
+msgstr "呼び出し前に引数の型を確認"
+
+msgid "先确认所需技能已安装"
+msgstr "必要なスキルが導入済みか確認"
+
+msgid "遇到这类工具报错前先自查操作顺序与参数"
+msgstr "操作順序と引数を先に自己点検"
+
+# ---------- Explain in plain words (讲人话 · 第三步) ----------
+msgid "讲人话（AI 解释 + 建议）"
+msgstr "やさしい言葉で説明（AI）"
+
+msgid "正在让 AI 讲人话…"
+msgstr "AI がやさしく説明中…"
+
+msgid "AI 没有给出可用的解释"
+msgstr "AI から使える説明が得られませんでした"
+
+msgid "这条经验在说什么"
+msgstr "この経験の意味"
+
+msgid "这是什么"
+msgstr "これは何？"
+
+msgid "给你的建议"
+msgstr "あなたへの提案"
+
+msgid "已用大白话讲完"
+msgstr "やさしく説明しました"
+
+#, python-brace-format
+msgid "AI 讲人话失败：{err}"
+msgstr "やさしい説明に失敗しました：{err}"
+
+# ---------- Session drawer redesign (会话现场重做) ----------
+msgid "会话现场"
+msgstr "セッションの記録"
+
+msgid "对话"
+msgstr "会話"
+
+msgid "（仅显示最近 15 步）"
+msgstr "（直近15ステップのみ表示）"
+
+# ---------- Home search chips localize ----------
+#, python-brace-format
+msgid "常见报错：{kw}"
+msgstr "よくあるエラー：{kw}"
+
+# ---------- Session drawer variant C (卡片面板) ----------
+msgid "轮次"
+msgstr "ラウンド"
+
+msgid "操作"
+msgstr "操作"
+
+msgid "项目"
+msgstr "プロジェクト"
+
+msgid "你"
+msgstr "あなた"
+
+msgid "AI"
+msgstr "AI"
+
+msgid "成功"
+msgstr "成功"
+
+msgid "失败"
+msgstr "失敗"
+
+msgid "（仅显示最近 14 条，向上滚动看更早）"
+msgstr "（直近14件のみ表示、上へスクロールで過去）"
+
+#, python-brace-format
+msgid "AI 判定 {n} 分"
+msgstr "AI 判定 {n} 点"
+
+msgid "AI 判过轻重 + 反复撞见的做法"
+msgstr "AI が重要度を判定＋何度も出会った対処"
+
+msgid "AI 打了重要性分"
+msgstr "AI が重要度をつけました"
+
+#, python-brace-format
+msgid "{a}；{b} 次任务还都在“未分类”一个桶里，没法按同类任务做严格对比 —— 这条线现在只能当参考，不能当证据。"
+msgstr "{a}。{b} 件のタスクがまだ「未分類」1 区分にまとまっているため、同種タスクとの厳密な比較はできません。この線は参考値で、証拠では ありません。"
+
+#, python-brace-format
+msgid "{n} 个助手 · {p} 个项目"
+msgstr "{n} エージェント · {p} プロジェクト"
+
+#, python-brace-format
+msgid "{n} 次任务 · 纠正 {c} 回 · 最近 {d}"
+msgstr "{n} タスク · 修正 {c} 回 · 最終 {d}"
+
+#, python-brace-format
+msgid "{n} 次任务现在全挤在“未分类”一个桶里，所以“某类任务越做越顺”给不了分项对比"
+msgstr "{n} 件のタスクがまだ「未分類」一か所なので、「だんだんスムーズ」を タスク種別ごとには示せません"
+
+#, python-brace-format
+msgid "{s} 次任务 · 活跃 {d} 天 · 纠正 {c} 回"
+msgstr "{s} タスク · 稼働 {d} 日 · 修正 {c} 回"
+
+#, python-brace-format
+msgid "{w} 周里活跃 {d} 天"
+msgstr "{w} 週のうち稼働 {d} 日"
+
+#, python-brace-format
+msgid "{y} 年 {m} 月"
+msgstr "{y}年{m}月"
+
+msgid "① 收进来"
+msgstr "① 収集"
+
+msgid "② 提炼出"
+msgstr "② 抽出"
+
+msgid "③ 判轻重"
+msgstr "③ 重要度判定"
+
+msgid "④ 带回给 AI"
+msgstr "④ AI に返す"
+
+msgid "⑤ 少返工"
+msgstr "⑤ 手戻り減"
+
+msgid "不过严格讲，这功劳还不能记在经验头上——它们一次都没被带回给你的助手，见下面第 ④ 格。"
+msgstr "厳密には、この改善を経験の成果とはまだ言えません——一度も AI に 返っていないので（下の ④ 番目参照）。"
+
+msgid "为什么平了，以及还不能算证据"
+msgstr "横ばいな理由、そしてまだ証拠ではない理由"
+
+msgid "从这些活里总结出可复用的做法"
+msgstr "この作業から再利用できるやり方を抽出"
+
+#, python-brace-format
+msgid "你带着 {n} 个 AI 助手跑了 {s} 次活，攒下 {e} 条真算你的经验"
+msgstr "{n} 体の AI エージェントと {s} 件の作業をし、自分の経験 {e} 件をためました"
+
+msgid "你干活的量 vs 要你返工的次数"
+msgstr "作業量 vs 手戻りを頼んだ回数"
+
+msgid "你干的活都被看见，不用手动记"
+msgstr "作業は自動で記録されます。手入力は不要です"
+
+msgid "你的经验"
+msgstr "あなたの経験"
+
+msgid "你的经验账本"
+msgstr "あなたの経験台帳"
+
+#, python-brace-format
+msgid "你的经验（{n} 条 ≥8 分）"
+msgstr "あなたの経験（{n} 件が 8 点以上）"
+
+msgid "你纠正后定下"
+msgstr "あなたの修正で確定"
+
+msgid "你表过态的"
+msgstr "あなたが評価したもの"
+
+msgid "你说过“不对，应该这样”"
+msgstr "あなたが「違う、こうする」と言ったもの"
+
+msgid "你还没点过“有用 / 没用”，AI 只能自己猜"
+msgstr "まだ「有用／不要」を押していないので、AI は推測するのみです"
+
+#, python-brace-format
+msgid "共 {n} 条属于你的经验"
+msgstr "あなた向けの経験は計 {n} 件"
+
+#, python-brace-format
+msgid "共 {n} 类、累计撞见 {c} 次，已自动生效"
+msgstr "計 {n} 種・延べ {c} 回、自動で反映済み"
+
+msgid "几个助手各自的磨合"
+msgstr "エージェントごとの手応え"
+
+msgid "分出任务类型"
+msgstr "タスクの種類分け"
+
+msgid "助手替你挡的坑"
+msgstr "エージェントが代わりに踏む落とし穴"
+
+msgid "去经验库看全部"
+msgstr "経験ライブラリで全部見る"
+
+msgid "变顺只发生了一次"
+msgstr "スムーズになったのは一度だけ"
+
+msgid "同类任务返工降幅"
+msgstr "同種タスクの手戻り減少率"
+
+#, python-brace-format
+msgid "同类情况遇到 {n} 次"
+msgstr "同種ケース {n} 回"
+
+msgid "听你说哪条真有用"
+msgstr "どれが本当に役立ったか教えてください"
+
+msgid "回/次"
+msgstr "回/件"
+
+#, python-brace-format
+msgid "经验已用上 {n} 次；样本攒够后第 ⑤ 格会给出同类任务的返工对比。"
+msgstr "経験が {n} 回流使われました；サンプルがたまれば ⑤ に同種のやり直し比較が出ます。"
+
+#, python-brace-format
+msgid "头 {e} 次任务你纠正了 {er} 回（平均 {early} 回/次），最近 {r} 次任务只纠正 {rr} 回（{recent} 回/次）。"
+msgstr "最初の {e} 件では {er} 回（{early} 回/件）修正、直近 {r} 件では {rr} 回（{recent} 回/件）だけ。"
+
+msgid "学习历程 / 方法沉淀 / 后台整理"
+msgstr "学習の歩み / 方法の蓄積 / 裏方の整理"
+
+msgid "它自己手滑，不算你的"
+msgstr "エージェントのミスで、あなたの教訓ではありません"
+
+#, python-brace-format
+msgid "平均每个任务纠正 {n} 回"
+msgstr "1 タスク平均 {n} 回修正"
+
+msgid "平均每个任务被你纠正几回"
+msgstr "タスクあたり何回修正を入れたか"
+
+msgid "当前模型端点连不上 · 已熔断"
+msgstr "モデルエンドポイントに接続できず · 遮断中"
+
+msgid "无月份"
+msgstr "月情報なし"
+
+msgid "最近平均返工"
+msgstr "直近の平均手戻り"
+
+#, python-brace-format
+msgid "有记录的周还不够多（需要至少 {n} 个），先继续用助手干活。"
+msgstr "記録のある週がまだ足りません（最低 {n} 週）。まずは作業を続けてください。"
+
+msgid "未知时间"
+msgstr "時刻不明"
+
+#, python-brace-format
+msgid "本阶段 {a} – {b} · {w} 周"
+msgstr "この段階 {a} – {b} · {w} 週"
+
+msgid "样本不够的直接说不够，不拿进度条装样子"
+msgstr "サンプルが足りなければそう書きます。見せかけの進捗バーは使いません"
+
+msgid "次"
+msgstr "回"
+
+msgid "次任务"
+msgstr "タスク"
+
+msgid "每周任务数"
+msgstr "週次タスク数"
+
+#, python-brace-format
+msgid "满分 {n} 的 {c} 条，先看前 {m} 条"
+msgstr "満点 {n} の {c} 件、まず {m} 件を表示"
+
+msgid "点一次“有用”，排序听你的"
+msgstr "1 件「有用」を押せば並びがあなたの優先に"
+
+msgid "点开展开：学习历程 / 方法沉淀 / 后台整理"
+msgstr "展開：学習の歩み / 方法 / 裏方の整理"
+
+msgid "看怎么接上"
+msgstr "接続方法を見る"
+
+msgid "看现场"
+msgstr "現場を見る"
+
+msgid "第 ④ 格为什么是 0：你的助手还没从这里取过经验。接上之后每次开工它先带着这些教训，你不用重复交代。"
+msgstr "④ が 0 な理由：エージェントはまだここから経験を取っていません。接続すれば作業開始時にこれらを持って臨むので、言い直しは要りません。"
+
+#, python-brace-format
+msgid "第一件连上 AI 就自动补，后两件各点几下就行。已经自动做好的：把干过的活收进来（{n} 次）。"
+msgstr "1 つ目は AI をつなげば自動で埋まり、残り 2 つは数クリックです。すでに自動でできていること：作業の取り込み（{n} 回）。"
+
+msgid "等第 ④ 格跑起来，这里给同类任务的对比"
+msgstr "④ が回り始めると、ここに同種タスクの比較が出ます"
+
+msgid "经验一次都没被带回给助手，降下来靠的是你自己反复交代"
+msgstr "経験は一度も AI に返っていないので、下がったのはあなたが繰り返し伝えた おかげです"
+
+#, python-brace-format
+msgid "经验已被助手取用 {n} 次，效果还要再攒样本"
+msgstr "経験は {n} 回利用されました。効果判定にはもう少しサンプルが要ります"
+
+msgid "经验飞轮转到哪一格了"
+msgstr "経験フライホイールはどこまで回ったか"
+
+#, python-brace-format
+msgid "覆盖 {a} – {b}"
+msgstr "対象 {a} – {b}"
+
+msgid "让经验回到会话里"
+msgstr "経験をセッションに返す"
+
+msgid "讲人话"
+msgstr "かみくだく"
+
+msgid "过程记录"
+msgstr "経過記録"
+
+#, python-brace-format
+msgid "返工 {e} 回/次 → {r} 回/次"
+msgstr "手戻り {e} 回/件 → {r} 回/件"
+
+#, python-brace-format
+msgid "返工确实少了：最早每次任务平均纠正 {e} 回，最近 {r} 回。"
+msgstr "手戻りは確かに減りました：当初は 1 件 {e} 回、直近は {r} 回。"
+
+msgid "还在攒样本"
+msgstr "サンプル集め中"
+
+msgid "还在攒样本：同类任务多做几次，这里就能告诉你返工有没有变少。"
+msgstr "サンプルをためています。同種の作業をもう少しすれば、手戻りが減ったか わかります。"
+
+msgid "还差这三件，才能给你看证据"
+msgstr "証拠をお見せするにはあと 3 つ必要です"
+
+msgid "还没接到你的助手会话里 —— 当前最该修的一环"
+msgstr "まだエージェントのセッションに接続されていません——今一番直す場所です"
+
+#, python-brace-format
+msgid "这 {n} 条不是你的教训，是它自己手滑，你不用管"
+msgstr "この {n} 件はあなたの教訓ではなく、エージェントのミスです。お任せください"
+
+msgid "这一周没有记录"
+msgstr "この週は記録なし"
+
+msgid "这些经验已被助手取用"
+msgstr "この経験はすでに利用済み"
+
+msgid "这条经验没记下来源会话"
+msgstr "この経験には元になったセッションが記録されていません"
+
+#, python-brace-format
+msgid "这段时间经验被带回给助手 {n} 次。"
+msgstr "この期間、経験は {n} 回 AI に返されました。"
+
+msgid "阶段结论 · 自动生成"
+msgstr "段階まとめ · 自動生成"
+
+msgid "明显变顺"
+msgstr "明らかにスムーズに"
+
+#, python-brace-format
+msgid "返工确实少了：最早每次任务平均纠正 {e} 回，最近 {r} 回（少 {p}%）。"
+msgstr "手戻りは確かに減りました：当初は 1 件 {e} 回、直近は {r} 回（{p}% 減）。"
+
+msgid "本来就顺"
+msgstr "もともとスムーズ"
+
+msgid "样本不够"
+msgstr "サンプル不足"
+
+#, python-brace-format
+msgid "{agents} 个助手 · {proj} 个项目 · {days} 个活跃日"
+msgstr "{agents} エージェント · {proj} プロジェクト · {days} 日稼働"
+
+#, python-brace-format
+msgid "{a} – {b} · {w} 周"
+msgstr "{a} – {b} · {w} 週"
+
+#, python-brace-format
+msgid "{cnt} 类 · 最多一类撞了 {top} 次"
+msgstr "{cnt} 種 · 最多で {top} 回"
+
+#, python-brace-format
+msgid "{q}？{a}"
+msgstr "{q}？{a}"
+
+#, python-brace-format
+msgid "{who} 从 {e} 回/次 降到 {r} 回/次"
+msgstr "{who}は 1 件 {e} 回 → {r} 回に減少"
+
+#, python-brace-format
+msgid "{who} 你一次都没纠正过，本来就顺"
+msgstr "{who} は一度も修正なし、もともとスムーズ"
+
+#, python-brace-format
+msgid "{who} 这周没来干活"
+msgstr "{who} は今週動きませんでした"
+
+msgid "从这些活里总结出做法"
+msgstr "この作業から対処を抽出"
+
+msgid "任务"
+msgstr "タスク"
+
+msgid "传承 把一份方法导出成可复用的 Skill 就解锁"
+msgstr "伝承 方法を再利用可能な Skill に書き出すと解除"
+
+msgid "你干的活都被看见"
+msgstr "作業は自動で記録"
+
+msgid "做对了吗"
+msgstr "正しくできたか"
+
+msgid "判轻重"
+msgstr "重要度判定"
+
+msgid "助手"
+msgstr "エージェント"
+
+msgid "哪条经验在变强"
+msgstr "どの経験が強くなっているか"
+
+msgid "四个问题"
+msgstr "四つの問い"
+
+#, python-brace-format
+msgid "头两周 {en} 次任务改 {ec} 回 · 最近 {rn} 次任务改 {rc} 回"
+msgstr "最初の 2 週 {en} 件で {ec} 回 · 最近 {rn} 件で {rc} 回"
+
+msgid "头两周 → 最近"
+msgstr "初期 → 直近"
+
+msgid "带回给 AI"
+msgstr "AI に返す"
+
+#, python-brace-format
+msgid "平均每个任务：{e} 回/次 → {r} 回/次"
+msgstr "1 タスク平均：{e} 回 → {r} 回"
+
+msgid "恭喜！解锁新里程碑"
+msgstr "新しい到達点！"
+
+msgid "拼成一张海报"
+msgstr "ポスターにする"
+
+msgid "提炼出"
+msgstr "抽出"
+
+msgid "收进来"
+msgstr "収集"
+
+msgid "更快了吗"
+msgstr "速くなったか"
+
+msgid "最值钱的三条经验"
+msgstr "一番価値ある 3 件"
+
+msgid "有没有用错地方"
+msgstr "場違いな使い方はなかったか"
+
+msgid "本周结算"
+msgstr "今週の締め"
+
+msgid "本阶段（全部记录）"
+msgstr "この段階（全記録）"
+
+msgid "柱 = 每周任务数 · 线 = 返工回/次"
+msgstr "棒 = 週次タスク数 · 線 = 1 件あたり手戻り"
+
+msgid "没有新固化的坑——不是坏事，说明没踩到新的"
+msgstr "新たに固定した落とし穴はなし——新しい失敗もなし"
+
+msgid "没有新的就不庆祝——数字变大不算里程碑，具象变身才算。"
+msgstr "新しい達成がなければ祝いません。数字の増加は到達点ではありません。"
+
+#, python-brace-format
+msgid "满分 {top} · 你纠正后定下 {corr}"
+msgstr "満点 {top} · 修正で確定 {corr}"
+
+msgid "点开看本周结算"
+msgstr "今週の締めを見る"
+
+msgid "经验飞轮转到哪了"
+msgstr "フライホイールの現在地"
+
+#, python-brace-format
+msgid "老练 还差 1 个任务类别出现真实改善（现在 {n} 次任务都还没分类）"
+msgstr "老練 真の改善が出るタスク種があと 1 つ必要（現在 {n} 件は未分類）"
+
+#, python-brace-format
+msgid "要你返工的次数，{w} 周里少了 {p}%"
+msgstr "{w} 週で手戻りが {p}% 減少"
+
+#, python-brace-format
+msgid "读取本周结算失败：{err}"
+msgstr "今週の締めを読み込めません：{err}"
+
+msgid "还没开始——经验一次都没被带回给助手"
+msgstr "まだ始まっていません——経験は一度も AI に返っていません"
+
+msgid "还没接到你的助手会话里"
+msgstr "まだセッションに接続されていません"
+
+msgid "这段时间"
+msgstr "この期間"
+
+msgid "这段时间攒下的东西"
+msgstr "この期間の積み上げ"
+
+#, python-brace-format
+msgid "避坑达人 {cnt} 类坑还在反复出现，最频繁的一类撞了 {top} 次"
+msgstr "落とし穴マスター {cnt} 種がまだ再発、最多は {top} 回"
+
+msgid "里程碑"
+msgstr "到達点"
+
+msgid "里程碑 · 已解锁"
+msgstr "到達点 · 解除済み"
+
+msgid "里程碑 · 还没解锁"
+msgstr "到達点 · まだ未解除"
+
+msgid "（还没有成长记录——用 agent 干几个活，这张图就有内容了）"
+msgstr "成長記録はまだありません——エージェントにいくつか作業させると埋まります"
+
+msgid "这阵子攒下的东西"
+msgstr "この間の積み上げ"
+
+msgid "这轮结算里有成就达成——点开报告看是哪一项"
+msgstr "今回の締めで達成点が解禁されました。報告書でどの項目か確認できます"
+
+msgid "按任务的磨合"
+msgstr "タスク種ごとの手応え"
+
+#, python-brace-format
+msgid "{name}解锁了"
+msgstr "{name} を解除"
+
+#, python-brace-format
+msgid "{name}解锁了：{agent}"
+msgstr "{name} を解除：{agent}"
+
+#, python-brace-format
+msgid "{name}解锁了：{agent} 的「{who}」"
+msgstr "{name} を解除：{agent}「{who}」"
+
+#, python-brace-format
+msgid "『{who}』平均比最初几次少 {n} 轮修正"
+msgstr "『{who}』は最初より平均 {n} ラウンド少ない"
+
+#, python-brace-format
+msgid "这周新固化 {n} 条坑：{who}"
+msgstr "今週 {n} 件の落とし穴を固定：{who}"
+
+#, python-brace-format
+msgid "『{who}』这周被自动带上 {n} 次"
+msgstr "『{who}』は今週 {n} 回自動で添付されました"
+
+#, python-brace-format
+msgid "从每次任务 {e} 回降到 {r} 回"
+msgstr "1 件 {e} 回 → {r} 回に減少"
+
+msgid "有记录的周还不够多，先继续用助手干活"
+msgstr "記録のある週がまだ少ないので、まずは作業を続けてください"
+
+msgid "没有发现用错地方的情况"
+msgstr "場違いな使い方はありませんでした"
+
+#, python-brace-format
+msgid "经验已送达助手 {n} 次（代理 {proxy} · hook {hook}）"
+msgstr "経験を {n} 回エージェントへ届けました（プロキシ {proxy} · hook {hook}）"
+
+#, python-brace-format
+msgid "经验自动送达还没装上——装上 Claude Code 连接，或把助手的接口地址指向 {url}"
+msgstr "経験の自動届出はまだ導入されていません。Claude Code の hook を入れるか、エージェントのエンドポイントを {url} に向けてください"
+
+msgid "连接脚本已装上，但助手一次都没用过——从那类工具发起一次会话就会开始记"
+msgstr "フックは導入済みですがエージェントから一度も呼び出しがありません。そこから会話を一度始めると記録されます"
+
+msgid "送达通道已通，但还没有经验真正用上（可能还没有可归类的经验）"
+msgstr "届ける経路は通っていますが、まだ経験は使われていません（分類できる経験が無い可能性）"
+
+#, python-brace-format
+msgid "{n} 次已送达（代理 {p} · hook {h}）/ 需要 {need} 次，第 ⑤ 格才会有数字"
+msgstr "{n} 回届けました（プロキシ {p} · hook {h}）／{need} 回必要で ⑤ に数が出ます"
+
+#, python-brace-format
+msgid "要你返工的次数，从每次 {e} 回降到 {r} 回"
+msgstr "手戻りが 1 件 {e} 回 → {r} 回に減少"
+
+msgid "还在攒样本：多做几次同类任务就能看出返工有没有变少"
+msgstr "サンプルをためています。同種の作業をもう少しすれば手戻りの減少が 分かります"
+
+msgid "去接上"
+msgstr "接続する"
+
+msgid "重建"
+msgstr "再構築"
+
+msgid "正在重建…"
+msgstr "再構築中…"
+
+msgid "重建完成"
+msgstr "再構築が完了しました"
+
+#, python-brace-format
+msgid "重建失败：{err}"
+msgstr "再構築に失敗しました：{err}"
+
+msgid "正在用全部经验重建这份方法卡…"
+msgstr "すべての経験からこの方法カードを再構築しています…"
+
+msgid "这份方法卡是空的（多半是上次总结没拿到内容）——用全部经验重蒸馏一次"
+msgstr "この方法カードは空です（前回のまとめで内容を取得できなかった場合がほとんどです）——すべての経験からもう一度作り直します"
+
+msgid "先导出一次，再打开文件夹"
+msgstr "先にエクスポートすると、フォルダーを開けます"
+
+#, python-brace-format
+msgid "文件夹已不在了：{path}"
+msgstr "フォルダーが見つかりません：{path}"
+
+#, python-brace-format
+msgid "已打开文件夹：{path}"
+msgstr "フォルダーを開きました：{path}"
+
+msgid "去让任意 AI 工具干个活，它的操作会自动出现在这里——踩了什么坑、怎么改好的，一目了然"
+msgstr "任意の AI ツールに仕事を任せると、その操作がここに自動で並びます——つまずいた点と直し方が一目で分かります"
+
+msgid "把环境变量 ANTHROPIC_BASE_URL 指到上面的地址（ANTHROPIC_API_KEY 填本页的接入令牌；真正生效的 Key 是你在 Experientia 里配的模型）。"
+msgstr "環境変数 ANTHROPIC_BASE_URL を上のアドレスへ向けてください（ANTHROPIC_API_KEY には本ページの接続トークンを設定；実際に効く Key は Experientia で設定したモデルです）。"
+
+msgid "在 ~/.codebuddy/models.json 的 models 里加一条模型，url 填 http://127.0.0.1:8100/v1/chat/completions（必须是完整接口路径），apiKey 填本页的接入令牌。"
+msgstr "~/.codebuddy/models.json の models にモデルを 1 つ追加：url は http://127.0.0.1:8100/v1/chat/completions（完全なインターフェースパス必須）、apiKey には本ページの接続トークンを設定。"
+
+msgid "在项目 opencode.json 加自定义 provider：npm 用 @ai-sdk/openai-compatible，options.baseURL 填上面的地址再加 /v1，apiKey 填本页的接入令牌，模型 ID 填你配的模型名；它的会话可自动记录，见下方「采集」。（模型列表见 /v1/models）"
+msgstr "プロジェクトの opencode.json にカスタム provider を追加：npm は @ai-sdk/openai-compatible、options.baseURL は上のアドレスに /v1 を足したもの、apiKey は本ページの接続トークン、モデル ID は設定したモデル名；セッションは自動で記録されます（下の「収集」を参照）。（モデル一覧は /v1/models）"
+
+msgid "把环境变量 DEEPSEEK_BASE_URL 指到上面的地址（或在配置里设 baseURL），Key 填本页的接入令牌。"
+msgstr "環境変数 DEEPSEEK_BASE_URL を上のアドレスへ（または設定で baseURL を指定）、Key には本ページの接続トークンを設定。"
+
+msgid "在配置里加一个自定义 provider（models.providers 下）：baseUrl 填上面的地址、api 选 openai-completions、Key 填本页的接入令牌，再选它作为模型。"
+msgstr "設定の models.providers にカスタム provider を追加：baseUrl は上のアドレス、api は openai-completions、Key は本ページの接続トークン、その後それでモデルを選択。"
+
+msgid "在 ~/.hermes/.env 里设 OPENAI_BASE_URL 为上面的地址，OPENAI_API_KEY 填本页的接入令牌（或在 hermes model 里选 Custom endpoint）。"
+msgstr "~/.hermes/.env で OPENAI_BASE_URL を上のアドレスに、OPENAI_API_KEY に本ページの接続トークンを設定（または hermes model で Custom endpoint を選択）。"
+
+msgid "设置 → 模型 → 添加自定义模型：URL 填上面的地址、Key 填本页的接入令牌、模型名任选。"
+msgstr "設定 → モデル → カスタムモデル追加：URL は上のアドレス、Key は本ページの接続トークン、モデル名は自由に。"
+
+#, python-brace-format
+msgid "接入令牌：{tok}"
+msgstr "接続トークン：{tok}"
+
+msgid "外部 agent 接 8100 时，apiKey / API_KEY / x-api-key 填这个令牌；填错会被拒绝"
+msgstr "外部 agent が 8100 に接続する際は apiKey / API_KEY / x-api-key にこのトークンを設定；間違えると拒否されます"
+
+msgid "复制令牌"
+msgstr "トークンをコピー"
+
+msgid "编辑前没先读文件"
+msgstr "ファイルを読まずに編集"
+
+msgid "操作顺序或参数不对"
+msgstr "手順かパラメータが誤り"
+
+msgid "替换没匹配上"
+msgstr "置換が一致しない"
+
+msgid "命令被安全策略拦下"
+msgstr "コマンドがセキュリティ規則で停止"
+
+msgid "拿着旧内容改文件"
+msgstr "古い内容のまま編集"
+
+msgid "传的参数类型不对"
+msgstr "渡したパラメータの型が誤り"
+
+msgid "要用的技能没装"
+msgstr "使うスキルが未導入"
+
+msgid "一处改还是全改没说清"
+msgstr "1 か所か全体か不明"
+
+msgid "其实没改动却提交"
+msgstr "変更なしで提出"
+
+#, python-brace-format
+msgid "{c} 次小毛病归成 {k} 类，都在自动改进 · 不用你操心"
+msgstr "小さなミス {c} 回を {k} 種に整理、すべて自動で改善中 · おまかせください"
+
+#, python-brace-format
+msgid "还有 {n} 类 · 合计 {c} 次"
+msgstr "他に {n} 種 · 計 {c} 回"
+
+msgid "展开"
+msgstr "展開"
+
+msgid "查看相关会话记录"
+msgstr "関連セッションを見る"
+
+msgid "环境变量"
+msgstr "環境変数"
+
+msgid "配置文件"
+msgstr "設定ファイル"
+
+msgid "软件内设置"
+msgstr "アプリ内設定"
+
+msgid "免配"
+msgstr "設定不要"
+
+msgid "设以下环境变量"
+msgstr "次の環境変数を設定してください"
+
+#, python-brace-format
+msgid "打开配置文件 {file}"
+msgstr "設定ファイル {file} を開いてください"
+
+msgid "照下面填，Key 用本页顶部的接入令牌"
+msgstr "下のように記入してください。Key にはこのページ上部のアクセストークンを使ってください"
+
+msgid "重启该工具，回本页在「已接入」里看到它，就接好了"
+msgstr "ツールを再起動し、このページの「接続済み」に表示されれば完了です"
+
+msgid "在工具里打开「设置 → 模型」，添加自定义模型"
+msgstr "ツールで「設定 → モデル」を開き、カスタムモデルを追加してください"
+
+msgid "保存后立即生效"
+msgstr "保存するとすぐに有効になります"
+
+msgid "AI 重写"
+msgstr "AI 書き直し"
+
+#, python-brace-format
+msgid "{action}需要先接一个模型（本地模型或 API 都行）。现在去「接入」页配置吗？"
+msgstr "{action}には先にモデルが必要です（ローカルモデルでも API でも構いません）。今すぐ「接続」ページで設定しますか？"
+
+msgid "未接入模型"
+msgstr "モデル未接続"
+
+msgid "未接入模型，无法完成这一步"
+msgstr "モデル未接続のため、この手順を完了できません"
+
+msgid "未接入模型，无法归纳成方法"
+msgstr "モデル未接続のため、方法にまとめられません"
+
+#, python-brace-format
+msgid "已接入 · 当前生效的模型路由：{name}（{endpoint}）"
+msgstr "接続済み · 現在有効なモデルルート：{name}（{endpoint}）"
+
+msgid "接入模型用于归纳类内容（方法正文 / 成长叙事 / AI 重写）；不接也能用：经验照常记录，账本、坑卡、原始记录、搜索都在本机可用。"
+msgstr "モデルは帰納系の内容（方法本文 / 成長ナラティブ / AI 書き直し）に使われます。接続しなくても、経験はこれまで通り記録され、台帳・落とし穴カード・元の記録・検索はこの端末内で利用できます。"
+
+msgid "未接入模型：归纳类内容（方法正文 / 成长叙事 / AI 重写）不可用；事实类内容（账本 / 坑卡 / 原始记录 / 搜索）本机完全可用"
+msgstr "モデル未接続：帰納系の内容（方法本文 / 成長ナラティブ / AI 書き直し）は利用できません。事実系の内容（台帳 / 落とし穴カード / 元の記録 / 検索）はこの端末内で完全に利用できます"
+
+#, python-brace-format
+msgid "未接入模型 · 内容为 {at} 生成 · 接入后可更新"
+msgstr "モデル未接続 · 内容は {at} に生成 · 接続後に更新できます"
+
+msgid "未接入模型 · 内容为上次生成 · 接入后可更新"
+msgstr "モデル未接続 · 内容は前回の生成 · 接続後に更新できます"
+
+msgid "已保留上次内容"
+msgstr "前回の内容を保持しました"
+
+msgid "查看这条经验的完整详情"
+msgstr "この経験の詳細をすべて見る"
+
+msgid "任务记录"
+msgstr "タスク記録"
+
+msgid "暂无详情"
+msgstr "詳細はまだありません"
+
+msgid "来源经验："
+msgstr "出典の経験："
+
+msgid "记录来源："
+msgstr "記録元："
+
+msgid "时间轨迹："
+msgstr "時間の軌跡："
+
+#, python-brace-format
+msgid "展开全文（还有 {n} 字）"
+msgstr "全文を展開（残り {n} 文字）"
+
+msgid "正在读取…"
+msgstr "読み込み中…"
+
+msgid "你的经验按任务类型长出来"
+msgstr "あなたの経験はタスク種別ごとに育ちます"
+
+msgid "这些是你收进来的活本身，跟模型通不通没关系"
+msgstr "これはあなたが収集した作業そのもので、モデルの接続状況とは関係ありません"
+
+#, python-brace-format
+msgid "近 {n} 天每天收进多少条"
+msgstr "直近 {n} 日の 1 日あたりの収集件数"
+
+#, python-brace-format
+msgid "近 {n} 天活跃度"
+msgstr "直近 {n} 日の稼働度"
+
+msgid "按任务类型攒下的条数"
+msgstr "タスク種別ごとに貯まった件数"
+
+msgid "让 AI 讲人话"
+msgstr "AI にかみくだいてもらう"
+
+msgid "偏好会在接入模型后，从你的纠正里归纳出来"
+msgstr "モデルを接続すると、あなたの修正から好みが帰納されます"
+
+msgid "预览"
+msgstr "プレビュー"
+
+msgid "设置加载失败，稍后重试"
+msgstr "設定の読み込みに失敗しました。しばらくして再試行してください"
+
+msgid "本机已可用"
+msgstr "この端末で利用可能"
+
+msgid "接入模型后更强"
+msgstr "モデルを接続するとさらに強くなります"
+
+#, python-brace-format
+msgid "本机已整理 {p} 条坑、{s} 场记录"
+msgstr "この端末で {p} 件の落とし穴と {s} 件の記録を整理しました"
+
+msgid "搜索、筛选、原始记录、坑卡都是本机能力，不接模型也能用"
+msgstr "検索・絞り込み・元の記録・落とし穴カードはすべてこの端末内の機能で、モデルなしでも使えます"
+
+msgid "把踩过的坑归纳成方法正文、写成长叙事、让 AI 重写总结——这些「归纳类」能力需要模型；接入后，本机攒下的记录会被整理成它们"
+msgstr "踏んだ落とし穴を方法本文にまとめ、成長ナラティブを書き、AI に要約を書き直させる——こうした帰納系の機能にはモデルが必要です。接続後、この端末に貯まった記録がそれらに整理されます"
+
+msgid "接入后开始把本机记录归纳成方法"
+msgstr "接続後、この端末の記録を方法にまとめ始めます"
+
+#, python-brace-format
+msgid "已攒下 {n} 条待提炼片段，接入后自动整理"
+msgstr "{n} 件の未整理の断片を保存しました。接続後に自動で整理します"
+
+msgid "自动记录、搜索、坑卡不接模型也能用；总结成方法与自动带上需要模型——接入是增强，不是前提"
+msgstr "自動記録・検索・落とし穴カードはモデルなしでも使えます。方法へのまとめと自動付与にはモデルが必要です——接続は強化であり、前提ではありません"
+
+msgid "自动记录一直在跑；总结成方法、自动带上已在工作"
+msgstr "自動記録は動き続けています。方法へのまとめと自動付与もすでに動作しています"
+
+msgid "还没有待总结的经验——先让 AI 干点活"
+msgstr "まだ要約する経験がありません——まず AI に少し働いてもらいましょう"
+
+msgid "点开看完整规则"
+msgstr "開いてルール全体を見る"
+
+msgid "规则"
+msgstr "ルール"
+
+msgid "触发时机"
+msgstr "発動タイミング"
+
+msgid "已启用"
+msgstr "有効"
+
+msgid "已停用"
+msgstr "無効"
+
+#, python-brace-format
+msgid "用过 {n} 次"
+msgstr "{n} 回使用"
+
+msgid "（这条规则没有正文）"
+msgstr "（このルールには本文がありません）"
+
+msgid "统计都在，故事要等模型接上"
+msgstr "数字はすべて揃っています——物語はモデルの接続待ちです"
+
+msgid "接上模型后，这里会多一段叙事：这周怎么变顺的、哪条经验在变强。下面这些数是实打实干出来的，不靠模型。"
+msgstr "モデルを接続すると、ここに物語が加わります：今週どう滑らかになったか、どの経験が強くなっているか。下の数字は実際にやった仕事そのもので、モデルがなくても出ています。"
+
+msgid "统计照常算，故事等模型恢复"
+msgstr "統計はそのまま算出、物語はモデルの復帰待ち"
+
+#, python-brace-format
+msgid "{endpoint} 最近没响应。统计照常算，叙事等模型恢复再补。"
+msgstr "{endpoint} が最近応答しません。統計はそのまま算出され、物語はモデルの復帰後に追記されます。"
+
+msgid "去检查"
+msgstr "確認する"
+
+msgid "老练"
+msgstr "老練"
+
+msgid "避坑达人"
+msgstr "落とし穴回避"
+
+msgid "传承"
+msgstr "伝承"
+
+#, python-brace-format
+msgid "展开状态保存失败：{err}"
+msgstr "展開状態の保存に失敗しました：{err}"
+
+msgid "引导页数据读取失败，显示默认状态"
+msgstr "ガイドデータの読み込みに失敗しました——既定値を表示しています"
+
+#, python-brace-format
+msgid "采集开关设置失败：{err}"
+msgstr "記録スイッチの設定に失敗しました：{err}"
+
+msgid "正在读取轨迹…"
+msgstr "軌跡を読み込み中…"
+
+msgid "注意：这个位置在用户主目录之外（可能是移动盘或网络盘）——盘不在线时软件会读不到经验库。"
+msgstr "注意：この場所はユーザーホームの外です（リムーバブルドライブやネットワークドライブの可能性があります）——ドライブが接続されていないと、経験ライブラリを読めません。"
+
+msgid "成功要点"
+msgstr "うまくいった点"
+
+msgid "失败模式"
+msgstr "失敗パターン"
+
+msgid "过时项标记"
+msgstr "古くなった項目"
+
+msgid "偏好增量"
+msgstr "好みの変化"
+
+#, python-brace-format
+msgid "{badge} 分 · {text}"
+msgstr "{badge} 点 · {text}"
+
+msgid "成长报告-"
+msgstr "成長レポート-"
+
+msgid "方法-"
+msgstr "メソッド-"
+
+msgid "经验详情"
+msgstr "経験の詳細"
+
+msgid "凭什么这么说"
+msgstr "その根拠"
+
+msgid "这条经验没有带原话证据（可能是早期数据或用户直接确认的）"
+msgstr "この経験には原話の証拠がありません（初期データ、またはあなたが直接確認したもの）"
+
+msgid "看原话"
+msgstr "原話を見る"
+
+msgid "它被改过吗"
+msgstr "変更されたか"
+
+msgid "还没被改过，这是第 1 版"
+msgstr "まだ変更されていません（1 版目）"
+
+#, python-brace-format
+msgid "共 {n} 版，下面是历史改动"
+msgstr "全 {n} 版、以下が過去の変更"
+
+msgid "当前"
+msgstr "現在"
+
+msgid "回到这版"
+msgstr "この版に戻す"
+
+msgid "忘了这条"
+msgstr "これを忘れる"
+
+msgid "彻底删除"
+msgstr "完全に削除"
+
+#, python-brace-format
+msgid "回到第 {n} 版"
+msgstr "{n} 版に戻す"
+
+msgid "会以新的一版写入（历史保留、不被覆盖），确定回滚吗？"
+msgstr "新しい版として書き込みます（履歴は残り、上書きされません）。戻しますか？"
+
+msgid "彻底删除不可撤销（只留 30 天归档副本），确定吗？"
+msgstr "完全削除は元に戻せません（30 日間のアーカイブのみ残ります）。よろしいですか？"
+
+#, python-brace-format
+msgid "已回到第 {n} 版"
+msgstr "{n} 版に戻しました"
+
+msgid "已彻底删除"
+msgstr "完全に削除しました"
+
+msgid "已遗忘，可从回收恢复"
+msgstr "忘れました。ごみ箱から復元できます"
+
+msgid "详情 / 演化"
+msgstr "詳細 / 履歴"
+
+msgid "会话原话"
+msgstr "セッションの原話"
+
+msgid "上报原文"
+msgstr "報告された原文"
+
+msgid "接下来可能要处理"
+msgstr "次にやること"
+
+msgid "从你反复做的事里看出来的苗头——只是提醒，不是要求；每条都可以「不再提醒」"
+msgstr "繰り返している作業から見えた傾向——ただのリマインダーで、指示ではありません。項目ごとに通知をオフにできます"
+
+#, python-brace-format
+msgid "出现过 {n} 次"
+msgstr "{n} 回出现"
+
+msgid "不再提醒"
+msgstr "もう通知しない"
+
+msgid "经验不存在"
+msgstr "経験が見つかりません"
+
+msgid "会话不存在"
+msgstr "セッションが見つかりません"
+
+msgid "节点不存在"
+msgstr "ノードが見つかりません"
+
+msgid "条目不存在"
+msgstr "項目が見つかりません"
+
+msgid "规则不存在"
+msgstr "ルールが見つかりません"
+
+msgid "playbook 不存在"
+msgstr "プレイブックが見つかりません"
+
+msgid "该版本不存在"
+msgstr "その版は存在しません"
+
+msgid "建议卡不存在"
+msgstr "提案カードが見つかりません"
+
+msgid "建议卡已处理"
+msgstr "提案カードは処理済みです"
+
+msgid "意图不存在或已忽略"
+msgstr "意図が見つからないか、既に無視されています"
+
+msgid "未找到该失败模式条目"
+msgstr "その失敗パターンの項目が見つかりません"
+
+msgid "未找到该失败模式条目（可能已被修订）"
+msgstr "その失敗パターンの項目が見つかりません（改訂された可能性があります）"
+
+msgid "无法遗忘（不存在或归档失败）"
+msgstr "忘却できません（存在しない、またはアーカイブに失敗）"
+
+msgid "该经验不在已遗忘状态"
+msgstr "その経験は忘却状態ではありません"
+
+msgid "模型调用失败，请稍后再试"
+msgstr "モデルの呼び出しに失敗しました。しばらくしてから再試行してください"
+
+msgid "模型没有给出改写内容"
+msgstr "モデルが書き換え内容を返しませんでした"
+
+msgid "重写内容为空"
+msgstr "書き換え内容が空です"
+
+msgid "text 不能为空"
+msgstr "text は空にできません"
+
+msgid "body 必须是 JSON 对象"
+msgstr "body は JSON オブジェクトでなければなりません"
+
+msgid "feedback 必须是 valid / corrected"
+msgstr "feedback は valid または corrected でなければなりません"
+
+msgid "action 必须是 apply/dismiss/defer"
+msgstr "action は apply / dismiss / defer のいずれかです"
+
+msgid "granularity 必须是 experiences/playbook/preferences/phase/growth/hooks"
+msgstr "granularity は experiences / playbook / preferences / phase / growth / hooks のいずれかです"
+
+msgid "template_id 包含非法字符"
+msgstr "template_id に使用できない文字が含まれています"
+
+msgid "未知模板"
+msgstr "不明なテンプレート"
+
+msgid "未导入过该模板"
+msgstr "そのテンプレートは一度もインポートされていません"
+
+msgid "id 不匹配"
+msgstr "id が一致しません"
+
+msgid "playbook 导出需要 trunk+category"
+msgstr "プレイブックの書き出しには trunk と category が必要です"
+
+msgid "偏好导出需要 trunk"
+msgstr "好みの書き出しには trunk が必要です"
+
+msgid "路径不在允许的导出目录内"
+msgstr "そのパスは許可された書き出し先にありません"
+
+msgid "需要确认口令：请在确认弹窗输入 WIPE"
+msgstr "確認が必要です：確認ダイアログに WIPE と入力してください"
+
+msgid "该类目暂无待总结的经验（要重建这份方法卡，请用「重建」）"
+msgstr "このカテゴリにはまだまとめる経験がありません（メソッドカードを作り直す場合は「再構築」を使ってください）"
+
+msgid "该类别还没有经验"
+msgstr "このカテゴリにはまだ経験がありません"
+
+msgid "该类别还没有可归纳的纠正/低 G 经验"
+msgstr "このカテゴリにはまだまとめられる修正・低 G 経験がありません"
+
+msgid "无法确定启动入口（开发模式需经 main.py 启动）"
+msgstr "起動エントリを特定できません（開発モードでは main.py から起動してください）"
+
+#, python-brace-format
+msgid "hook 状态读取失败：{err}"
+msgstr "フック状態を読み取れません: {err}"
+
+msgid "记忆构成"
+msgstr "記憶の中身"
+
+msgid "会话摘要"
+msgstr "セッション要約"
+
+msgid "方法卡"
+msgstr "メソッドカード"
+
+msgid "意图"
+msgstr "意図"
+
+msgid "经验攒够了，可以总结成方法"
+msgstr "経験がたまりました。メソッドにまとめましょう"
+
+msgid "今天过期"
+msgstr "今日が期限"
+
+#, python-brace-format
+msgid "约 {n} 天后过期"
+msgstr "約{n}日後に期限切れ"
+
+#, python-brace-format
+msgid "忽略失败：{err}"
+msgstr "通知オフに失敗しました：{err}"
+
+#, python-brace-format
+msgid "读不到演化链：{err}"
+msgstr "変更履歴を読めません: {err}"
+
+#, python-brace-format
+msgid "打不开当时的会话：{err}"
+msgstr "その時のセッションを開けません: {err}"
+
+msgid "读取中…"
+msgstr "読み込み中"
+
+msgid "正在打开当时的会话…"
+msgstr "その時のセッションを開いています"
+
+msgid "恢复"
+msgstr "復元"
+
+msgid "已恢复"
+msgstr "復元しました"
+
+#, python-brace-format
+msgid "……还有 {n} 条"
+msgstr "さらに {n} 件"
+
